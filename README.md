@@ -190,6 +190,24 @@ src/
 MIT — siehe [LICENSE](./LICENSE). Kurz: nutzen, modifizieren, verteilen
 erlaubt; keine Gewährleistung, keine Haftung.
 
+## Disclaimer
+
+Dieses Projekt steht in **keiner Verbindung zu Suno Inc., Udio AI,
+Anthropic PBC oder OpenAI**. „Suno", „Udio", „Claude" und „GPT" sind
+Marken der jeweiligen Inhaber und werden hier ausschließlich nominativ
+genannt, um den Einsatzzweck des Tools zu beschreiben.
+
+**Cloud-Fallback**: Wenn du einen Anthropic- oder OpenAI-API-Key
+einträgst, werden deine Prompts direkt aus deinem Browser an den
+jeweiligen Anbieter geschickt — dein Key bleibt im lokalen `localStorage`.
+Abrechnung, Datenschutz und Nutzungsbedingungen liegen ausschließlich
+beim gewählten Anbieter.
+
+**Generierte Inhalte**: Das Tool erzeugt ausschließlich Text-Prompts.
+Die eigentliche Musikgenerierung erfolgt auf externen Plattformen
+(Suno/Udio) und unterliegt deren Nutzungsbedingungen. Für kommerzielle
+Nutzung generierter Musik sind die Plattform-AGBs zu beachten.
+
 ## Autor
 
 Martin Deppe — martindeppe1@googlemail.com
