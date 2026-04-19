@@ -9,6 +9,37 @@ Ziel-Plattform wird im Header umgeschaltet — Suno bekommt einen Prosa-Prompt
 mit optionalen Struktur-Tags in den Lyrics, Udio eine komma-separierte
 Tag-Liste ohne Meta-Tags. Der strukturierte Roh-Prompt funktioniert für beide.
 
+## Screenshots
+
+### Hauptansicht (Custom-Modus)
+Drei Panels: Sidebar mit Kategorien-Navigation, Content-Bereich mit der
+aktiven Section, rechts Preview mit Roh-Prompt, Score und KI-Ausformulierung.
+
+![Hauptansicht](screenshots/02-main-custom.png)
+
+### Strukturierte Genre-Auswahl
+23 Hauptgenres und rund 200 Subgenres mit BPM-Ranges und Keywords.
+Suche in jeder Section mit Substring-Match auf Label, Hint und ID.
+
+![Genre-Auswahl](screenshots/04-main-genres.png)
+
+### KI-Ausformulierung
+Aus der strukturierten Auswahl baut das lokale Ollama-Modell einen
+ziel-spezifischen Prompt — Prosa für Suno, Tag-Liste für Udio.
+Dazu Score, optionale LLM-Bewertung und Refinement-Feedback.
+
+![KI-Ausformulierung](screenshots/10-prompt-generation.png)
+
+### Einstellungen
+Kreativitäts-Modus, Qualitäts-Gates, Auto-Backup-Intervall, Cloud-Fallback
+und Hintergrund-Animation — alles in einem Settings-Panel.
+
+![Einstellungen](screenshots/11-settings-1.png)
+
+Weitere Screenshots (Simple-/Studio-Modus, Subgenres, Zweitstil,
+Klingt-wie-Analyse, Options-Panels) liegen im Ordner
+[`screenshots/`](./screenshots).
+
 ## Stack
 
 - React 18 + TypeScript + Vite 5
