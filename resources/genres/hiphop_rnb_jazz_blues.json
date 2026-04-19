@@ -1,0 +1,1705 @@
+{
+  "_meta": {
+    "main_genres": ["hiphop", "rnb", "jazz", "blues", "funk", "soul"],
+    "count": 167,
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_hip-hop_genres",
+      "https://en.wikipedia.org/wiki/List_of_jazz_genres",
+      "https://en.wikipedia.org/wiki/Blues",
+      "https://en.wikipedia.org/wiki/Funk",
+      "https://en.wikipedia.org/wiki/Soul_music",
+      "https://rateyourmusic.com/genre/hip-hop/",
+      "https://rateyourmusic.com/genre/jazz/",
+      "https://rateyourmusic.com/genre/funk/",
+      "https://www.everynoise.com/",
+      "https://musicmap.info/",
+      "https://raptology.com/list-of-rap-and-hip-hop-genres/",
+      "https://bluescentric.com/trivia-article/what-are-the-subgenres-of-blues-music/",
+      "https://www.soulandfunkmusic.com/safm-related/safm-styles/21-genres-of-soul-music.html",
+      "https://jazzfuel.com/types-of-jazz-music-styles/"
+    ],
+    "created": "2026-04-14"
+  },
+  "subgenres": [
+
+    {
+      "id": "old_school_hiphop",
+      "name": "Old School Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 90,
+      "bpm_max": 110,
+      "keywords": ["breakbeat", "MC battle", "DJ scratching"],
+      "origin": "New York City, 1970s–1980s"
+    },
+    {
+      "id": "boom_bap",
+      "name": "Boom Bap",
+      "parent_main": "hiphop",
+      "parent": "east_coast_hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["jazz samples", "punchy snare", "lyricism"],
+      "origin": "New York City, 1990s"
+    },
+    {
+      "id": "east_coast_hiphop",
+      "name": "East Coast Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["complex rhymes", "jazz sampling", "narrative"],
+      "origin": "New York City, 1980s–1990s"
+    },
+    {
+      "id": "west_coast_hiphop",
+      "name": "West Coast Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 88,
+      "bpm_max": 105,
+      "keywords": ["lowrider", "laid-back flow", "P-funk samples"],
+      "origin": "Los Angeles / Bay Area, late 1980s"
+    },
+    {
+      "id": "golden_era_hiphop",
+      "name": "Golden Era Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 88,
+      "bpm_max": 100,
+      "keywords": ["dense sampling", "conscious lyrics", "b-boy culture"],
+      "origin": "USA, 1986–1997"
+    },
+    {
+      "id": "conscious_hiphop",
+      "name": "Conscious Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["social commentary", "political lyrics", "afrocentric"],
+      "origin": "USA, 1987–present"
+    },
+    {
+      "id": "gangsta_rap",
+      "name": "Gangsta Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 88,
+      "bpm_max": 100,
+      "keywords": ["street life", "gun violence", "West Coast"],
+      "origin": "Compton / Los Angeles, late 1980s"
+    },
+    {
+      "id": "g_funk",
+      "name": "G-Funk",
+      "parent_main": "hiphop",
+      "parent": "west_coast_hiphop",
+      "bpm_min": 88,
+      "bpm_max": 100,
+      "keywords": ["synthesizer whine", "P-funk samples", "slow groove"],
+      "origin": "Compton, 1992–1997"
+    },
+    {
+      "id": "jazz_rap",
+      "name": "Jazz Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["live jazz samples", "poetry", "saxophone"],
+      "origin": "New York City, late 1980s"
+    },
+    {
+      "id": "abstract_hiphop",
+      "name": "Abstract Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "underground_hiphop",
+      "bpm_min": 80,
+      "bpm_max": 100,
+      "keywords": ["experimental beats", "esoteric lyrics", "non-linear"],
+      "origin": "USA, 1990s"
+    },
+    {
+      "id": "underground_hiphop",
+      "name": "Underground Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 85,
+      "bpm_max": 105,
+      "keywords": ["independent label", "raw production", "anti-mainstream"],
+      "origin": "USA, 1990s–present"
+    },
+    {
+      "id": "hardcore_hiphop",
+      "name": "Hardcore Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 90,
+      "bpm_max": 110,
+      "keywords": ["aggressive delivery", "gritty beats", "street credibility"],
+      "origin": "New York City, 1990s"
+    },
+    {
+      "id": "horrorcore",
+      "name": "Horrorcore",
+      "parent_main": "hiphop",
+      "parent": "hardcore_hiphop",
+      "bpm_min": 80,
+      "bpm_max": 100,
+      "keywords": ["horror samples", "graphic violence", "dark imagery"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "mafioso_rap",
+      "name": "Mafioso Rap",
+      "parent_main": "hiphop",
+      "parent": "east_coast_hiphop",
+      "bpm_min": 88,
+      "bpm_max": 100,
+      "keywords": ["crime film references", "luxury", "elaborate storytelling"],
+      "origin": "New York City, 1994–1999"
+    },
+    {
+      "id": "midwest_hiphop",
+      "name": "Midwest Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 88,
+      "bpm_max": 105,
+      "keywords": ["introspective lyrics", "soulful samples", "rugged delivery"],
+      "origin": "Chicago / Detroit / St. Louis, 1990s"
+    },
+    {
+      "id": "chopper_rap",
+      "name": "Chopper Rap",
+      "parent_main": "hiphop",
+      "parent": "midwest_hiphop",
+      "bpm_min": 140,
+      "bpm_max": 180,
+      "keywords": ["rapid fire flow", "technical speed", "tongue twister"],
+      "origin": "Kansas City / Cleveland, 1990s"
+    },
+    {
+      "id": "dirty_south",
+      "name": "Dirty South",
+      "parent_main": "hiphop",
+      "parent": "southern_hiphop",
+      "bpm_min": 72,
+      "bpm_max": 95,
+      "keywords": ["heavy bass", "southern drawl", "808 drums"],
+      "origin": "Atlanta / Southeast USA, mid-1990s"
+    },
+    {
+      "id": "southern_hiphop",
+      "name": "Southern Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 70,
+      "bpm_max": 95,
+      "keywords": ["trunk rattling bass", "chopped vocals", "regional slang"],
+      "origin": "Atlanta / Houston, late 1980s"
+    },
+    {
+      "id": "miami_bass",
+      "name": "Miami Bass",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 125,
+      "bpm_max": 145,
+      "keywords": ["Roland TR-808", "sub-bass", "booty rap"],
+      "origin": "Miami, 1980s"
+    },
+    {
+      "id": "memphis_rap",
+      "name": "Memphis Rap",
+      "parent_main": "hiphop",
+      "parent": "southern_hiphop",
+      "bpm_min": 75,
+      "bpm_max": 95,
+      "keywords": ["lo-fi cassette", "TR-808", "dark atmosphere"],
+      "origin": "Memphis, Tennessee, late 1980s"
+    },
+    {
+      "id": "turntablism",
+      "name": "Turntablism",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["DJ technique", "scratching", "vinyl"],
+      "origin": "New York City, 1970s–1990s"
+    },
+    {
+      "id": "nerdcore",
+      "name": "Nerdcore",
+      "parent_main": "hiphop",
+      "parent": "underground_hiphop",
+      "bpm_min": 90,
+      "bpm_max": 115,
+      "keywords": ["geek culture", "internet references", "science fiction"],
+      "origin": "USA, 2000s"
+    },
+
+    {
+      "id": "trap",
+      "name": "Trap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 60,
+      "bpm_max": 90,
+      "keywords": ["hi-hat rolls", "808 bass", "triplet flow"],
+      "origin": "Atlanta, early 2000s"
+    },
+    {
+      "id": "drill_chicago",
+      "name": "Chicago Drill",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 60,
+      "bpm_max": 80,
+      "keywords": ["dark minor keys", "street violence", "sliding 808"],
+      "origin": "Chicago, South Side, 2010–2012"
+    },
+    {
+      "id": "drill_uk",
+      "name": "UK Drill",
+      "parent_main": "hiphop",
+      "parent": "drill_chicago",
+      "bpm_min": 140,
+      "bpm_max": 150,
+      "keywords": ["rolling basslines", "dark piano", "London slang"],
+      "origin": "London, 2012–2015"
+    },
+    {
+      "id": "drill_ny",
+      "name": "New York Drill",
+      "parent_main": "hiphop",
+      "parent": "drill_chicago",
+      "bpm_min": 140,
+      "bpm_max": 150,
+      "keywords": ["boom bap influence", "NYC braggadocio", "piano loops"],
+      "origin": "New York City, 2016–2018"
+    },
+    {
+      "id": "grime",
+      "name": "Grime",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 130,
+      "bpm_max": 140,
+      "keywords": ["140 BPM grid", "syncopated beats", "UK garage roots"],
+      "origin": "East London, early 2000s"
+    },
+    {
+      "id": "phonk",
+      "name": "Phonk",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 120,
+      "bpm_max": 145,
+      "keywords": ["Memphis samples", "cowbell", "chopped vocals"],
+      "origin": "USA, early 2010s"
+    },
+    {
+      "id": "phonk_drift",
+      "name": "Drift Phonk",
+      "parent_main": "hiphop",
+      "parent": "phonk",
+      "bpm_min": 130,
+      "bpm_max": 150,
+      "keywords": ["cowbells", "distorted 808", "Russian drift scene"],
+      "origin": "Russia / Eastern Europe, 2020s"
+    },
+    {
+      "id": "memphis_phonk",
+      "name": "Memphis Phonk",
+      "parent_main": "hiphop",
+      "parent": "phonk",
+      "bpm_min": 110,
+      "bpm_max": 135,
+      "keywords": ["90s Memphis samples", "lo-fi texture", "chopped rap"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "mumble_rap",
+      "name": "Mumble Rap",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 65,
+      "bpm_max": 85,
+      "keywords": ["melody over lyrics", "auto-tune", "slurred delivery"],
+      "origin": "Atlanta, 2014–2017"
+    },
+    {
+      "id": "cloud_rap",
+      "name": "Cloud Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["ambient textures", "hazy samples", "ethereal feel"],
+      "origin": "USA, 2010–2012"
+    },
+    {
+      "id": "emo_rap",
+      "name": "Emo Rap",
+      "parent_main": "hiphop",
+      "parent": "cloud_rap",
+      "bpm_min": 65,
+      "bpm_max": 85,
+      "keywords": ["emotional vulnerability", "auto-tune singing", "rock influence"],
+      "origin": "SoundCloud / USA, 2015–2018"
+    },
+    {
+      "id": "soundcloud_rap",
+      "name": "SoundCloud Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["internet-born", "lo-fi recording", "genre-blending"],
+      "origin": "USA, 2014–2018"
+    },
+    {
+      "id": "lofi_hiphop",
+      "name": "Lo-Fi Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 70,
+      "bpm_max": 90,
+      "keywords": ["vinyl crackle", "relaxed beats", "study music"],
+      "origin": "Internet / USA-Japan, 2010s"
+    },
+    {
+      "id": "melodic_rap",
+      "name": "Melodic Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 70,
+      "bpm_max": 95,
+      "keywords": ["singing and rapping", "hook-driven", "pop crossover"],
+      "origin": "USA, 2017–present"
+    },
+    {
+      "id": "trap_metal",
+      "name": "Trap Metal",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["screaming vocals", "distorted 808", "metal guitar riffs"],
+      "origin": "USA, 2017–present"
+    },
+    {
+      "id": "rage_beat",
+      "name": "Rage",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 75,
+      "bpm_max": 100,
+      "keywords": ["distorted synths", "aggressive energy", "Playboi Carti influence"],
+      "origin": "USA, 2019–present"
+    },
+    {
+      "id": "plugg",
+      "name": "Plugg",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 130,
+      "bpm_max": 145,
+      "keywords": ["sparkly melodies", "deep 808", "melodic Atlanta"],
+      "origin": "Atlanta, 2014–present"
+    },
+    {
+      "id": "pluggnb",
+      "name": "PluggnB",
+      "parent_main": "hiphop",
+      "parent": "plugg",
+      "bpm_min": 130,
+      "bpm_max": 145,
+      "keywords": ["dreamy R&B synths", "plugg structure", "melodic hooks"],
+      "origin": "USA, 2019–present"
+    },
+    {
+      "id": "hyperpop_rap",
+      "name": "Hyperpop Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 140,
+      "bpm_max": 200,
+      "keywords": ["pitch-shifted vocals", "maximalist production", "digital distortion"],
+      "origin": "UK / USA, early 2010s"
+    },
+    {
+      "id": "digicore",
+      "name": "Digicore",
+      "parent_main": "hiphop",
+      "parent": "hyperpop_rap",
+      "bpm_min": 140,
+      "bpm_max": 175,
+      "keywords": ["Gen Z internet", "emo rap + hyperpop", "confessional"],
+      "origin": "Internet / USA, 2019–2022"
+    },
+    {
+      "id": "trap_soul",
+      "name": "Trap Soul",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 65,
+      "bpm_max": 85,
+      "keywords": ["slow trap beats", "R&B vocals", "emotional delivery"],
+      "origin": "USA, 2016–present"
+    },
+    {
+      "id": "latin_trap",
+      "name": "Latin Trap",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["Spanish lyrics", "trap beats", "reggaeton cross"],
+      "origin": "Puerto Rico / USA, 2014–present"
+    },
+    {
+      "id": "psychedelic_rap",
+      "name": "Psychedelic Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 75,
+      "bpm_max": 100,
+      "keywords": ["woozy samples", "surreal lyrics", "experimental"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "alternative_hiphop",
+      "name": "Alternative Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 85,
+      "bpm_max": 110,
+      "keywords": ["eclectic sampling", "non-commercial", "genre fusion"],
+      "origin": "USA, 1990s–present"
+    },
+    {
+      "id": "experimental_hiphop",
+      "name": "Experimental Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "alternative_hiphop",
+      "bpm_min": 70,
+      "bpm_max": 115,
+      "keywords": ["unconventional structures", "noise elements", "avant-garde"],
+      "origin": "USA, 1990s–present"
+    },
+
+    {
+      "id": "hyphy",
+      "name": "Hyphy",
+      "parent_main": "hiphop",
+      "parent": "west_coast_hiphop",
+      "bpm_min": 100,
+      "bpm_max": 125,
+      "keywords": ["hyperactive energy", "ghost ride", "scraper bikes"],
+      "origin": "Oakland / Bay Area, mid-1990s"
+    },
+    {
+      "id": "jerk_rap",
+      "name": "Jerk",
+      "parent_main": "hiphop",
+      "parent": "west_coast_hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["dance moves", "New Boyz influence", "California youth"],
+      "origin": "Inland Empire, California, 2009"
+    },
+    {
+      "id": "crunk",
+      "name": "Crunk",
+      "parent_main": "hiphop",
+      "parent": "southern_hiphop",
+      "bpm_min": 70,
+      "bpm_max": 85,
+      "keywords": ["call and response chants", "club energy", "Lil Jon"],
+      "origin": "Memphis / Atlanta, 1990s"
+    },
+    {
+      "id": "snap_music",
+      "name": "Snap Music",
+      "parent_main": "hiphop",
+      "parent": "crunk",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["finger snapping", "minimal production", "Atlanta Bankhead"],
+      "origin": "Atlanta, 2005–2007"
+    },
+    {
+      "id": "bounce",
+      "name": "Bounce",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 100,
+      "bpm_max": 130,
+      "keywords": ["chant call-and-response", "New Orleans projects", "twerking"],
+      "origin": "New Orleans, 1990s"
+    },
+    {
+      "id": "chopped_screwed",
+      "name": "Chopped and Screwed",
+      "parent_main": "hiphop",
+      "parent": "southern_hiphop",
+      "bpm_min": 55,
+      "bpm_max": 75,
+      "keywords": ["slowed tempo", "DJ Screw", "syrup culture"],
+      "origin": "Houston, 1990s"
+    },
+    {
+      "id": "turf_music",
+      "name": "Turf Music",
+      "parent_main": "hiphop",
+      "parent": "west_coast_hiphop",
+      "bpm_min": 90,
+      "bpm_max": 110,
+      "keywords": ["Oakland slang", "hyphy offshoot", "street"],
+      "origin": "Oakland, 2000s"
+    },
+    {
+      "id": "ratchet_music",
+      "name": "Ratchet Music",
+      "parent_main": "hiphop",
+      "parent": "southern_hiphop",
+      "bpm_min": 65,
+      "bpm_max": 85,
+      "keywords": ["bass-heavy clubs", "Southern femininity", "aggressive party"],
+      "origin": "Shreveport / Louisiana, 2010s"
+    },
+    {
+      "id": "mobb_music",
+      "name": "Mobb Music",
+      "parent_main": "hiphop",
+      "parent": "east_coast_hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["Queensbridge", "atmospheric dark beats", "street survival"],
+      "origin": "New York, Queens, 1990s"
+    },
+    {
+      "id": "uk_rap",
+      "name": "UK Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 85,
+      "bpm_max": 100,
+      "keywords": ["British slang", "grime influence", "road rap"],
+      "origin": "London, 2000s–present"
+    },
+    {
+      "id": "francophone_rap",
+      "name": "Francophone Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 88,
+      "bpm_max": 105,
+      "keywords": ["French lyrics", "Parisian banlieue", "African diaspora"],
+      "origin": "Paris / France, 1990s"
+    },
+    {
+      "id": "german_rap",
+      "name": "German Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 88,
+      "bpm_max": 105,
+      "keywords": ["Deutschrap", "Berlin streets", "Turkish-German culture"],
+      "origin": "Germany, 1990s"
+    },
+    {
+      "id": "afroswing",
+      "name": "Afroswing",
+      "parent_main": "hiphop",
+      "parent": "uk_rap",
+      "bpm_min": 75,
+      "bpm_max": 100,
+      "keywords": ["afrobeats rhythms", "UK trap", "dancehall cross"],
+      "origin": "London, 2014–present"
+    },
+    {
+      "id": "jersey_club",
+      "name": "Jersey Club",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 130,
+      "bpm_max": 145,
+      "keywords": ["staccato hi-hats", "vocal chops", "Newark dance"],
+      "origin": "Newark, New Jersey, 2000s"
+    },
+    {
+      "id": "footwork",
+      "name": "Footwork",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 155,
+      "bpm_max": 165,
+      "keywords": ["160 BPM grid", "chopped samples", "Chicago dance"],
+      "origin": "Chicago, 2000s"
+    },
+    {
+      "id": "ghettotech",
+      "name": "Ghettotech",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 145,
+      "bpm_max": 165,
+      "keywords": ["electro drums", "booty bass", "Detroit rave scene"],
+      "origin": "Detroit, 1990s"
+    },
+    {
+      "id": "baltimore_club",
+      "name": "Baltimore Club",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 130,
+      "bpm_max": 145,
+      "keywords": ["breakbeat samples", "vocal loops", "club dance"],
+      "origin": "Baltimore, 1990s"
+    },
+
+    {
+      "id": "classic_rnb",
+      "name": "Classic R&B",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 80,
+      "bpm_max": 110,
+      "keywords": ["gospel influence", "blues roots", "call and response"],
+      "origin": "USA, 1940s–1960s"
+    },
+    {
+      "id": "contemporary_rnb",
+      "name": "Contemporary R&B",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 70,
+      "bpm_max": 100,
+      "keywords": ["smooth production", "vocal runs", "pop crossover"],
+      "origin": "USA, 1980s–present"
+    },
+    {
+      "id": "neo_soul",
+      "name": "Neo-Soul",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 70,
+      "bpm_max": 100,
+      "keywords": ["vintage soul aesthetic", "hip-hop beats", "organic instruments"],
+      "origin": "Philadelphia / Los Angeles, early 1990s"
+    },
+    {
+      "id": "alternative_rnb",
+      "name": "Alternative R&B",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 65,
+      "bpm_max": 100,
+      "keywords": ["experimental production", "dark textures", "indie ethos"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "pbrnb",
+      "name": "PBR&B",
+      "parent_main": "rnb",
+      "parent": "alternative_rnb",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["indie R&B", "lo-fi feel", "Weeknd influence"],
+      "origin": "Internet / USA, 2010–2014"
+    },
+    {
+      "id": "quiet_storm",
+      "name": "Quiet Storm",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 60,
+      "bpm_max": 85,
+      "keywords": ["slow jams", "romantic lyrics", "late-night radio"],
+      "origin": "USA, mid-1970s"
+    },
+    {
+      "id": "new_jack_swing",
+      "name": "New Jack Swing",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 100,
+      "bpm_max": 120,
+      "keywords": ["hip-hop drums", "R&B melodies", "synthesizer hooks"],
+      "origin": "New York City, 1987–1994"
+    },
+    {
+      "id": "motown",
+      "name": "Motown",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 100,
+      "bpm_max": 130,
+      "keywords": ["tambourine", "orchestrated pop soul", "Hitsville USA"],
+      "origin": "Detroit, 1959–1970s"
+    },
+    {
+      "id": "philly_soul",
+      "name": "Philadelphia Soul",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 95,
+      "bpm_max": 120,
+      "keywords": ["lush strings", "orchestral arrangements", "sophisticated groove"],
+      "origin": "Philadelphia, 1970s"
+    },
+    {
+      "id": "northern_soul",
+      "name": "Northern Soul",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 115,
+      "bpm_max": 135,
+      "keywords": ["fast dancing", "obscure American soul", "UK club scene"],
+      "origin": "Northern England, 1960s–1970s"
+    },
+    {
+      "id": "blue_eyed_soul",
+      "name": "Blue-Eyed Soul",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 80,
+      "bpm_max": 115,
+      "keywords": ["white artists", "Black music tradition", "pop crossover"],
+      "origin": "USA / UK, 1960s"
+    },
+    {
+      "id": "funk_rnb",
+      "name": "Funk R&B",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 95,
+      "bpm_max": 120,
+      "keywords": ["rhythmic groove", "bass-driven", "syncopation"],
+      "origin": "USA, 1970s"
+    },
+    {
+      "id": "contemporary_gospel",
+      "name": "Contemporary Gospel",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 80,
+      "bpm_max": 120,
+      "keywords": ["spiritual lyrics", "R&B production", "choir arrangements"],
+      "origin": "USA, 1970s–present"
+    },
+
+    {
+      "id": "southern_soul",
+      "name": "Southern Soul",
+      "parent_main": "soul",
+      "parent": "soul",
+      "bpm_min": 70,
+      "bpm_max": 100,
+      "keywords": ["gospel energy", "gritty vocals", "horn sections"],
+      "origin": "Muscle Shoals / Memphis, 1960s"
+    },
+    {
+      "id": "memphis_soul",
+      "name": "Memphis Soul",
+      "parent_main": "soul",
+      "parent": "southern_soul",
+      "bpm_min": 75,
+      "bpm_max": 100,
+      "keywords": ["Stax Records", "melancholic horns", "organ"],
+      "origin": "Memphis, 1960s–1970s"
+    },
+    {
+      "id": "chicago_soul",
+      "name": "Chicago Soul",
+      "parent_main": "soul",
+      "parent": "soul",
+      "bpm_min": 80,
+      "bpm_max": 110,
+      "keywords": ["gospel-influenced", "pop appeal", "doo-wop roots"],
+      "origin": "Chicago, 1960s"
+    },
+    {
+      "id": "deep_soul",
+      "name": "Deep Soul",
+      "parent_main": "soul",
+      "parent": "soul",
+      "bpm_min": 60,
+      "bpm_max": 90,
+      "keywords": ["raw emotion", "pain and struggle", "rural South"],
+      "origin": "Alabama / Mississippi, 1960s"
+    },
+    {
+      "id": "psychedelic_soul",
+      "name": "Psychedelic Soul",
+      "parent_main": "soul",
+      "parent": "soul",
+      "bpm_min": 85,
+      "bpm_max": 110,
+      "keywords": ["wah-wah guitar", "lysergic production", "social protest"],
+      "origin": "USA, late 1960s–early 1970s"
+    },
+    {
+      "id": "soul_blues",
+      "name": "Soul Blues",
+      "parent_main": "soul",
+      "parent": "soul",
+      "bpm_min": 70,
+      "bpm_max": 100,
+      "keywords": ["gospel feel", "blues foundation", "Southern church"],
+      "origin": "Deep South USA, 1960s–1970s"
+    },
+    {
+      "id": "new_orleans_soul",
+      "name": "New Orleans Soul",
+      "parent_main": "soul",
+      "parent": "soul",
+      "bpm_min": 80,
+      "bpm_max": 115,
+      "keywords": ["second line rhythms", "professor Longhair piano", "swampy groove"],
+      "origin": "New Orleans, 1950s–1970s"
+    },
+
+    {
+      "id": "classic_funk",
+      "name": "Classic Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 95,
+      "bpm_max": 120,
+      "keywords": ["syncopated bass", "brass section", "rhythmic groove"],
+      "origin": "USA, 1960s–1970s"
+    },
+    {
+      "id": "p_funk",
+      "name": "P-Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 95,
+      "bpm_max": 120,
+      "keywords": ["Parliament-Funkadelic", "psychedelic funk", "Afrofuturism"],
+      "origin": "New Jersey / Detroit, 1970s"
+    },
+    {
+      "id": "jazz_funk",
+      "name": "Jazz-Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 90,
+      "bpm_max": 120,
+      "keywords": ["improvisation", "electric bass", "Rhodes piano"],
+      "origin": "USA, late 1960s–1970s"
+    },
+    {
+      "id": "funk_rock",
+      "name": "Funk Rock",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 95,
+      "bpm_max": 130,
+      "keywords": ["distorted guitar", "slap bass", "high energy"],
+      "origin": "USA, 1970s–1990s"
+    },
+    {
+      "id": "go_go",
+      "name": "Go-Go",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 100,
+      "bpm_max": 120,
+      "keywords": ["continuous percussion groove", "crowd call-response", "live feel"],
+      "origin": "Washington D.C., 1970s"
+    },
+    {
+      "id": "minneapolis_sound",
+      "name": "Minneapolis Sound",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 105,
+      "bpm_max": 130,
+      "keywords": ["new wave influence", "electric guitar layers", "Prince"],
+      "origin": "Minneapolis, late 1970s–1980s"
+    },
+    {
+      "id": "boogie",
+      "name": "Boogie",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 100,
+      "bpm_max": 130,
+      "keywords": ["post-disco", "dance floor", "synthesizers"],
+      "origin": "USA / UK, late 1970s–1980s"
+    },
+    {
+      "id": "electro_funk",
+      "name": "Electro-Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 115,
+      "bpm_max": 135,
+      "keywords": ["Roland TR-808", "vocoders", "hip-hop proto-beats"],
+      "origin": "USA, early 1980s"
+    },
+    {
+      "id": "disco_funk",
+      "name": "Disco-Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 110,
+      "bpm_max": 130,
+      "keywords": ["four-on-the-floor", "bassline groove", "strings"],
+      "origin": "USA, mid-1970s"
+    },
+    {
+      "id": "deep_funk",
+      "name": "Deep Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 90,
+      "bpm_max": 115,
+      "keywords": ["raw groove", "The Meters influence", "New Orleans"],
+      "origin": "New Orleans / USA, 1960s"
+    },
+    {
+      "id": "britfunk",
+      "name": "Britfunk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 95,
+      "bpm_max": 120,
+      "keywords": ["British jazz fusion", "synths", "funk groove"],
+      "origin": "UK, late 1970s–1980s"
+    },
+    {
+      "id": "avant_funk",
+      "name": "Avant-Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 90,
+      "bpm_max": 120,
+      "keywords": ["experimental structures", "dissonance", "art music"],
+      "origin": "USA, 1970s–1980s"
+    },
+    {
+      "id": "latin_funk",
+      "name": "Latin Funk",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 95,
+      "bpm_max": 130,
+      "keywords": ["conga percussion", "salsa rhythms", "bass groove"],
+      "origin": "New York / Cuba, 1960s–1970s"
+    },
+
+    {
+      "id": "ragtime",
+      "name": "Ragtime",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 100,
+      "bpm_max": 130,
+      "keywords": ["syncopated piano", "march rhythm", "Scott Joplin"],
+      "origin": "Sedalia / St. Louis, 1890s–1910s"
+    },
+    {
+      "id": "dixieland",
+      "name": "Dixieland",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 100,
+      "bpm_max": 160,
+      "keywords": ["collective improvisation", "brass band", "New Orleans marches"],
+      "origin": "New Orleans, 1900s–1920s"
+    },
+    {
+      "id": "stride_piano",
+      "name": "Stride Piano",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 100,
+      "bpm_max": 220,
+      "keywords": ["left hand bass-chord alternation", "virtuosic", "Harlem"],
+      "origin": "New York City / Harlem, 1910s–1930s"
+    },
+    {
+      "id": "swing",
+      "name": "Swing",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 120,
+      "bpm_max": 180,
+      "keywords": ["big band", "danceable", "swing feel"],
+      "origin": "USA, 1930s–1940s"
+    },
+    {
+      "id": "big_band",
+      "name": "Big Band",
+      "parent_main": "jazz",
+      "parent": "swing",
+      "bpm_min": 120,
+      "bpm_max": 200,
+      "keywords": ["large ensemble", "arranged sections", "Glenn Miller"],
+      "origin": "USA, 1920s–1940s"
+    },
+    {
+      "id": "kansas_city_jazz",
+      "name": "Kansas City Jazz",
+      "parent_main": "jazz",
+      "parent": "swing",
+      "bpm_min": 130,
+      "bpm_max": 180,
+      "keywords": ["riff-based", "bluesy", "Count Basie"],
+      "origin": "Kansas City, 1930s"
+    },
+    {
+      "id": "bebop",
+      "name": "Bebop",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 180,
+      "bpm_max": 300,
+      "keywords": ["complex harmonics", "virtuosity", "non-danceable"],
+      "origin": "New York City, 1940s"
+    },
+    {
+      "id": "hard_bop",
+      "name": "Hard Bop",
+      "parent_main": "jazz",
+      "parent": "bebop",
+      "bpm_min": 140,
+      "bpm_max": 260,
+      "keywords": ["gospel influence", "blues feel", "Blue Note Records"],
+      "origin": "New York City / Detroit, 1950s"
+    },
+    {
+      "id": "cool_jazz",
+      "name": "Cool Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 90,
+      "bpm_max": 180,
+      "keywords": ["relaxed tone", "complex arrangements", "Miles Davis"],
+      "origin": "West Coast / New York, late 1940s"
+    },
+    {
+      "id": "west_coast_jazz",
+      "name": "West Coast Jazz",
+      "parent_main": "jazz",
+      "parent": "cool_jazz",
+      "bpm_min": 90,
+      "bpm_max": 160,
+      "keywords": ["smooth contrapuntal lines", "formal arrangements", "California"],
+      "origin": "Los Angeles, 1950s"
+    },
+    {
+      "id": "modal_jazz",
+      "name": "Modal Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 80,
+      "bpm_max": 200,
+      "keywords": ["mode-based improvisation", "Kind of Blue", "open space"],
+      "origin": "USA, late 1950s"
+    },
+    {
+      "id": "free_jazz",
+      "name": "Free Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 60,
+      "bpm_max": 300,
+      "keywords": ["no fixed tempo", "collective improvisation", "Ornette Coleman"],
+      "origin": "USA, late 1950s–1960s"
+    },
+    {
+      "id": "avant_garde_jazz",
+      "name": "Avant-Garde Jazz",
+      "parent_main": "jazz",
+      "parent": "free_jazz",
+      "bpm_min": 60,
+      "bpm_max": 280,
+      "keywords": ["experimental", "atonal elements", "extended techniques"],
+      "origin": "USA, 1960s"
+    },
+    {
+      "id": "jazz_fusion",
+      "name": "Jazz Fusion",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 90,
+      "bpm_max": 160,
+      "keywords": ["electric instruments", "rock rhythms", "Mahavishnu"],
+      "origin": "USA, late 1960s–1970s"
+    },
+    {
+      "id": "jazz_rock",
+      "name": "Jazz-Rock",
+      "parent_main": "jazz",
+      "parent": "jazz_fusion",
+      "bpm_min": 100,
+      "bpm_max": 160,
+      "keywords": ["distorted guitar", "rock drumming", "jazz improvisation"],
+      "origin": "USA / UK, 1960s–1970s"
+    },
+    {
+      "id": "smooth_jazz",
+      "name": "Smooth Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 85,
+      "bpm_max": 110,
+      "keywords": ["radio-friendly", "soft textures", "adult contemporary"],
+      "origin": "USA, 1980s–1990s"
+    },
+    {
+      "id": "acid_jazz",
+      "name": "Acid Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 90,
+      "bpm_max": 120,
+      "keywords": ["hip-hop loops", "funk grooves", "London club scene"],
+      "origin": "London, 1980s–1990s"
+    },
+    {
+      "id": "nu_jazz",
+      "name": "Nu-Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 85,
+      "bpm_max": 125,
+      "keywords": ["electronic elements", "contemporary aesthetics", "genre-blending"],
+      "origin": "Europe / USA, 1990s–present"
+    },
+    {
+      "id": "latin_jazz",
+      "name": "Latin Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 120,
+      "bpm_max": 200,
+      "keywords": ["clave rhythm", "congas", "salsa influence"],
+      "origin": "New York / Cuba, 1940s"
+    },
+    {
+      "id": "afro_cuban_jazz",
+      "name": "Afro-Cuban Jazz",
+      "parent_main": "jazz",
+      "parent": "latin_jazz",
+      "bpm_min": 120,
+      "bpm_max": 200,
+      "keywords": ["son montuno", "timbales", "mambo"],
+      "origin": "Havana / New York, 1940s"
+    },
+    {
+      "id": "bossa_nova",
+      "name": "Bossa Nova",
+      "parent_main": "jazz",
+      "parent": "latin_jazz",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["samba influence", "nylon guitar", "understated"],
+      "origin": "Rio de Janeiro, 1958–1960s"
+    },
+    {
+      "id": "samba_jazz",
+      "name": "Samba-Jazz",
+      "parent_main": "jazz",
+      "parent": "latin_jazz",
+      "bpm_min": 120,
+      "bpm_max": 180,
+      "keywords": ["Brazilian swing", "complex rhythms", "acoustic feel"],
+      "origin": "Brazil, 1960s"
+    },
+    {
+      "id": "gypsy_jazz",
+      "name": "Gypsy Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 130,
+      "bpm_max": 260,
+      "keywords": ["Django Reinhardt", "la pompe rhythm", "acoustic guitar"],
+      "origin": "France / Europe, 1930s"
+    },
+    {
+      "id": "ecm_jazz",
+      "name": "ECM Style Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 60,
+      "bpm_max": 140,
+      "keywords": ["spacious recording", "European minimalism", "Nordic feel"],
+      "origin": "Germany / Europe, 1970s"
+    },
+    {
+      "id": "spiritual_jazz",
+      "name": "Spiritual Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 80,
+      "bpm_max": 180,
+      "keywords": ["religious transcendence", "African heritage", "Coltrane influence"],
+      "origin": "USA, 1960s"
+    },
+    {
+      "id": "post_bop",
+      "name": "Post-Bop",
+      "parent_main": "jazz",
+      "parent": "bebop",
+      "bpm_min": 100,
+      "bpm_max": 280,
+      "keywords": ["modal harmony", "outside playing", "sophisticated"],
+      "origin": "USA, 1960s"
+    },
+    {
+      "id": "vocal_jazz",
+      "name": "Vocal Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 80,
+      "bpm_max": 180,
+      "keywords": ["scat singing", "standard repertoire", "Ella Fitzgerald"],
+      "origin": "USA, 1930s–present"
+    },
+    {
+      "id": "chamber_jazz",
+      "name": "Chamber Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 70,
+      "bpm_max": 160,
+      "keywords": ["classical crossover", "small ensemble", "acoustic intimacy"],
+      "origin": "USA / Europe, 1950s"
+    },
+    {
+      "id": "cape_jazz",
+      "name": "Cape Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 100,
+      "bpm_max": 180,
+      "keywords": ["South African township", "marabi", "Abdullah Ibrahim"],
+      "origin": "Cape Town, 1950s"
+    },
+    {
+      "id": "ethio_jazz",
+      "name": "Ethio-Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 90,
+      "bpm_max": 150,
+      "keywords": ["Ethiopian pentatonic scales", "jazzy improvisation", "Mulatu Astatke"],
+      "origin": "Addis Ababa, 1960s–1970s"
+    },
+    {
+      "id": "afrobeat",
+      "name": "Afrobeat",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["Fela Kuti", "polyrhythm", "political commentary"],
+      "origin": "Lagos / Nigeria, 1960s–1970s"
+    },
+    {
+      "id": "third_stream",
+      "name": "Third Stream",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 60,
+      "bpm_max": 200,
+      "keywords": ["classical jazz crossover", "orchestral jazz", "experimental form"],
+      "origin": "USA, 1950s–1960s"
+    },
+    {
+      "id": "indo_jazz",
+      "name": "Indo-Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 80,
+      "bpm_max": 180,
+      "keywords": ["Indian raga", "jazz harmonics", "sitar and saxophone"],
+      "origin": "USA / India, 1960s"
+    },
+    {
+      "id": "noir_jazz",
+      "name": "Noir Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz",
+      "bpm_min": 70,
+      "bpm_max": 120,
+      "keywords": ["dark atmosphere", "cinematic", "film noir mood"],
+      "origin": "USA, 1950s"
+    },
+
+    {
+      "id": "delta_blues",
+      "name": "Delta Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 60,
+      "bpm_max": 100,
+      "keywords": ["slide guitar", "raw vocals", "Mississippi"],
+      "origin": "Mississippi Delta, 1920s–1930s"
+    },
+    {
+      "id": "chicago_blues",
+      "name": "Chicago Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 70,
+      "bpm_max": 110,
+      "keywords": ["electric guitar", "harmonica", "urban shuffle"],
+      "origin": "Chicago, 1940s–1950s"
+    },
+    {
+      "id": "texas_blues",
+      "name": "Texas Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 75,
+      "bpm_max": 120,
+      "keywords": ["T-Bone Walker influence", "high-energy guitar", "country influence"],
+      "origin": "Texas, 1930s–1950s"
+    },
+    {
+      "id": "piedmont_blues",
+      "name": "Piedmont Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 80,
+      "bpm_max": 115,
+      "keywords": ["fingerpicking", "alternating bass", "ragtime influence"],
+      "origin": "Southeastern USA, 1900s–1940s"
+    },
+    {
+      "id": "country_blues",
+      "name": "Country Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 60,
+      "bpm_max": 100,
+      "keywords": ["acoustic guitar", "rural South", "solo performance"],
+      "origin": "Rural Southern USA, 1920s"
+    },
+    {
+      "id": "memphis_blues",
+      "name": "Memphis Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 70,
+      "bpm_max": 110,
+      "keywords": ["W.C. Handy", "urban acoustic", "jug band"],
+      "origin": "Memphis, Tennessee, 1910s–1930s"
+    },
+    {
+      "id": "jump_blues",
+      "name": "Jump Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 160,
+      "bpm_max": 200,
+      "keywords": ["small combo", "horn section", "swing boogie hybrid"],
+      "origin": "USA, 1940s"
+    },
+    {
+      "id": "boogie_woogie",
+      "name": "Boogie-Woogie",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 115,
+      "bpm_max": 160,
+      "keywords": ["rolling piano bass", "eight-to-the-bar", "locomotive rhythm"],
+      "origin": "Texas / Chicago, 1870s–1930s"
+    },
+    {
+      "id": "electric_blues",
+      "name": "Electric Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 70,
+      "bpm_max": 120,
+      "keywords": ["amplified guitar", "electrified sound", "urban evolution"],
+      "origin": "USA, 1940s–1950s"
+    },
+    {
+      "id": "blues_rock",
+      "name": "Blues Rock",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 85,
+      "bpm_max": 140,
+      "keywords": ["distorted guitar", "rock energy", "blues structure"],
+      "origin": "UK / USA, 1960s"
+    },
+    {
+      "id": "british_blues",
+      "name": "British Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 80,
+      "bpm_max": 130,
+      "keywords": ["Clapton Mayall influence", "Chicago blues reverence", "British Invasion"],
+      "origin": "UK, 1960s"
+    },
+    {
+      "id": "swamp_blues",
+      "name": "Swamp Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 65,
+      "bpm_max": 95,
+      "keywords": ["heavy reverb", "plodding rhythm", "bayou atmosphere"],
+      "origin": "Louisiana / Mississippi, 1950s"
+    },
+    {
+      "id": "louisiana_blues",
+      "name": "Louisiana Blues",
+      "parent_main": "blues",
+      "parent": "swamp_blues",
+      "bpm_min": 65,
+      "bpm_max": 95,
+      "keywords": ["Jimmy Reed influence", "loose feel", "echo"],
+      "origin": "Louisiana, 1950s"
+    },
+    {
+      "id": "hill_country_blues",
+      "name": "Hill Country Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 70,
+      "bpm_max": 110,
+      "keywords": ["one-chord drone", "hypnotic groove", "R.L. Burnside"],
+      "origin": "Northern Mississippi hill country, 1940s"
+    },
+    {
+      "id": "bentonia_blues",
+      "name": "Bentonia Blues",
+      "parent_main": "blues",
+      "parent": "delta_blues",
+      "bpm_min": 55,
+      "bpm_max": 85,
+      "keywords": ["minor key", "haunting slide", "open tuning"],
+      "origin": "Bentonia, Mississippi, 1920s"
+    },
+    {
+      "id": "classic_blues",
+      "name": "Classic Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 80,
+      "bpm_max": 120,
+      "keywords": ["female vocalists", "jazz ensemble backing", "vaudeville"],
+      "origin": "USA, 1920s"
+    },
+    {
+      "id": "st_louis_blues",
+      "name": "St. Louis Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 80,
+      "bpm_max": 120,
+      "keywords": ["ragtime blend", "early jazz influence", "piano"],
+      "origin": "St. Louis, 1900s–1930s"
+    },
+    {
+      "id": "kansas_city_blues",
+      "name": "Kansas City Blues",
+      "parent_main": "blues",
+      "parent": "blues",
+      "bpm_min": 130,
+      "bpm_max": 190,
+      "keywords": ["jump blues style", "big band support", "Count Basie"],
+      "origin": "Kansas City, 1930s–1940s"
+    },
+    {
+      "id": "acoustic_blues",
+      "name": "Acoustic Blues",
+      "parent_main": "blues",
+      "parent": "country_blues",
+      "bpm_min": 60,
+      "bpm_max": 100,
+      "keywords": ["fingerstyle guitar", "solo", "folk tradition"],
+      "origin": "Southern USA, 1890s"
+    },
+
+    {
+      "id": "latin_soul",
+      "name": "Latin Soul",
+      "parent_main": "rnb",
+      "parent": "rnb",
+      "bpm_min": 100,
+      "bpm_max": 130,
+      "keywords": ["mambo meets soul", "New York barrio", "Spanish tinge"],
+      "origin": "New York City, 1960s"
+    },
+    {
+      "id": "boogaloo",
+      "name": "Boogaloo",
+      "parent_main": "rnb",
+      "parent": "latin_soul",
+      "bpm_min": 110,
+      "bpm_max": 140,
+      "keywords": ["Afro-Cuban rhythms", "soul fusion", "English/Spanish lyrics"],
+      "origin": "New York City, 1966–1970"
+    },
+    {
+      "id": "tropical_soul",
+      "name": "Tropical Soul",
+      "parent_main": "rnb",
+      "parent": "latin_soul",
+      "bpm_min": 90,
+      "bpm_max": 120,
+      "keywords": ["Caribbean warmth", "soul harmonics", "island feel"],
+      "origin": "Caribbean / New York, 1960s–1970s"
+    },
+
+    {
+      "id": "trip_hop",
+      "name": "Trip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["dark atmosphere", "UK Bristol scene", "sampled beats"],
+      "origin": "Bristol UK, early 1990s"
+    },
+    {
+      "id": "instrumental_hiphop",
+      "name": "Instrumental Hip-Hop",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 80,
+      "bpm_max": 110,
+      "keywords": ["no lyrics", "beat focus", "producer-led"],
+      "origin": "USA, 1990s"
+    },
+    {
+      "id": "funk_carioca",
+      "name": "Funk Carioca",
+      "parent_main": "funk",
+      "parent": "funk",
+      "bpm_min": 125,
+      "bpm_max": 145,
+      "keywords": ["Miami bass influence", "baile funk", "favela"],
+      "origin": "Rio de Janeiro, 1980s"
+    },
+    {
+      "id": "kwaito",
+      "name": "Kwaito",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 100,
+      "bpm_max": 115,
+      "keywords": ["slowed house", "South African township", "Zulu lyrics"],
+      "origin": "Johannesburg, 1990s"
+    },
+    {
+      "id": "hiplife",
+      "name": "Hiplife",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 100,
+      "bpm_max": 120,
+      "keywords": ["highlife samples", "Twi lyrics", "Ghanaian hip-hop"],
+      "origin": "Ghana, 1990s"
+    },
+    {
+      "id": "afro_trap",
+      "name": "Afro-Trap",
+      "parent_main": "hiphop",
+      "parent": "trap",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["Afrobeats rhythm", "trap hi-hats", "French-African artists"],
+      "origin": "Paris / West Africa, 2014–present"
+    },
+    {
+      "id": "drill_africa",
+      "name": "Afro Drill",
+      "parent_main": "hiphop",
+      "parent": "drill_uk",
+      "bpm_min": 140,
+      "bpm_max": 150,
+      "keywords": ["UK drill influence", "African languages", "diaspora"],
+      "origin": "Africa / UK, 2018–present"
+    },
+    {
+      "id": "punk_rap",
+      "name": "Punk Rap",
+      "parent_main": "hiphop",
+      "parent": "hiphop",
+      "bpm_min": 120,
+      "bpm_max": 180,
+      "keywords": ["anti-establishment", "distorted energy", "fast aggressive"],
+      "origin": "USA, 1990s–present"
+    },
+    {
+      "id": "chopped_not_slopped",
+      "name": "Chopped Not Slopped",
+      "parent_main": "hiphop",
+      "parent": "chopped_screwed",
+      "bpm_min": 55,
+      "bpm_max": 75,
+      "keywords": ["OG Ron C technique", "stuttering edits", "Houston"],
+      "origin": "Houston, 2000s"
+    },
+    {
+      "id": "progressive_big_band",
+      "name": "Progressive Big Band",
+      "parent_main": "jazz",
+      "parent": "big_band",
+      "bpm_min": 100,
+      "bpm_max": 220,
+      "keywords": ["complex arrangements", "Stan Kenton", "experimental orchestration"],
+      "origin": "USA, 1940s–1950s"
+    },
+    {
+      "id": "soul_jazz",
+      "name": "Soul Jazz",
+      "parent_main": "jazz",
+      "parent": "hard_bop",
+      "bpm_min": 90,
+      "bpm_max": 140,
+      "keywords": ["Hammond organ", "gospel feel", "blues roots"],
+      "origin": "USA, 1950s–1960s"
+    },
+    {
+      "id": "funk_jazz",
+      "name": "Funk Jazz",
+      "parent_main": "jazz",
+      "parent": "jazz_funk",
+      "bpm_min": 90,
+      "bpm_max": 120,
+      "keywords": ["groove-oriented", "funky bass lines", "jazz harmonies"],
+      "origin": "USA, 1970s"
+    },
+    {
+      "id": "crossover_jazz",
+      "name": "Crossover Jazz",
+      "parent_main": "jazz",
+      "parent": "smooth_jazz",
+      "bpm_min": 85,
+      "bpm_max": 120,
+      "keywords": ["pop appeal", "mainstream", "melodic improvisation"],
+      "origin": "USA, 1980s–1990s"
+    },
+    {
+      "id": "trap_jazz",
+      "name": "Trap Jazz",
+      "parent_main": "jazz",
+      "parent": "nu_jazz",
+      "bpm_min": 65,
+      "bpm_max": 90,
+      "keywords": ["jazz samples over trap beats", "808 bass", "saxophone"],
+      "origin": "USA / Internet, 2015–present"
+    }
+  ]
+}

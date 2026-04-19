@@ -1,0 +1,2221 @@
+{
+  "_meta": {
+    "main_genres": ["rock", "metal", "punk", "indie", "pop"],
+    "count": 219,
+    "created": "2026-04-14",
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_rock_genres",
+      "https://en.wikipedia.org/wiki/Heavy_metal_genres",
+      "https://en.wikipedia.org/wiki/Punk_rock_subgenres",
+      "https://en.wikipedia.org/wiki/Styles_of_pop_music",
+      "https://musicmap.info/",
+      "https://www.everynoise.com/",
+      "https://rateyourmusic.com/genres/",
+      "https://www.progarchives.com/"
+    ],
+    "groups": [
+      "rock_classic",
+      "alternative",
+      "grunge_90s",
+      "punk",
+      "metal_heavy",
+      "pop",
+      "new_wave_postpunk",
+      "progressive_art",
+      "niche_regional",
+      "noise_industrial"
+    ]
+  },
+  "subgenres": [
+    {
+      "id": "classic_rock",
+      "name": "Classic Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["guitar riff", "arena sound", "anthemic"],
+      "origin": "USA/UK, 1960s–1970s"
+    },
+    {
+      "id": "hard_rock",
+      "name": "Hard Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 110,
+      "bpm_max": 160,
+      "keywords": ["heavy riffs", "distorted guitar", "powerful vocals"],
+      "origin": "USA/UK, late 1960s"
+    },
+    {
+      "id": "rockabilly",
+      "name": "Rockabilly",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 140,
+      "bpm_max": 185,
+      "keywords": ["slap bass", "twangy guitar", "vintage 50s"],
+      "origin": "USA, 1950s"
+    },
+    {
+      "id": "psychedelic_rock",
+      "name": "Psychedelic Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 80,
+      "bpm_max": 130,
+      "keywords": ["lysergic", "wah guitar", "trippy"],
+      "origin": "USA/UK, 1966–1969"
+    },
+    {
+      "id": "glam_rock",
+      "name": "Glam Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 115,
+      "bpm_max": 150,
+      "keywords": ["glittery", "androgynous", "stomping beat"],
+      "origin": "UK, early 1970s"
+    },
+    {
+      "id": "arena_rock",
+      "name": "Arena Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 110,
+      "bpm_max": 148,
+      "keywords": ["stadium", "chorus-heavy", "anthemic hook"],
+      "origin": "USA, mid-1970s"
+    },
+    {
+      "id": "heartland_rock",
+      "name": "Heartland Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["working class", "American", "earnest"],
+      "origin": "USA Midwest, 1970s–1980s"
+    },
+    {
+      "id": "southern_rock",
+      "name": "Southern Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["dual guitar", "country-tinged", "swampy"],
+      "origin": "USA South, 1969–1970s"
+    },
+    {
+      "id": "pub_rock",
+      "name": "Pub Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 110,
+      "bpm_max": 155,
+      "keywords": ["raw", "no-frills", "R&B-influenced"],
+      "origin": "UK, early 1970s"
+    },
+    {
+      "id": "garage_rock",
+      "name": "Garage Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 120,
+      "bpm_max": 165,
+      "keywords": ["raw", "lo-fi", "primitive"],
+      "origin": "USA, 1960s"
+    },
+    {
+      "id": "swamp_rock",
+      "name": "Swamp Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 85,
+      "bpm_max": 125,
+      "keywords": ["bluesy", "humid groove", "roots"],
+      "origin": "USA South, late 1960s"
+    },
+    {
+      "id": "roots_rock",
+      "name": "Roots Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 90,
+      "bpm_max": 135,
+      "keywords": ["Americana", "back to basics", "earthy"],
+      "origin": "USA, 1970s"
+    },
+    {
+      "id": "surf_rock",
+      "name": "Surf Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 125,
+      "bpm_max": 170,
+      "keywords": ["reverb guitar", "oceanic", "instrumental"],
+      "origin": "California, early 1960s"
+    },
+    {
+      "id": "blues_rock",
+      "name": "Blues Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 75,
+      "bpm_max": 140,
+      "keywords": ["12-bar blues", "pentatonic riffs", "gritty"],
+      "origin": "UK/USA, mid-1960s"
+    },
+    {
+      "id": "folk_rock",
+      "name": "Folk Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 85,
+      "bpm_max": 130,
+      "keywords": ["acoustic-electric", "harmonies", "folk storytelling"],
+      "origin": "USA/UK, 1965"
+    },
+    {
+      "id": "country_rock",
+      "name": "Country Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 90,
+      "bpm_max": 140,
+      "keywords": ["pedal steel", "country twang", "laid-back"],
+      "origin": "USA, late 1960s"
+    },
+    {
+      "id": "jazz_rock",
+      "name": "Jazz Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 160,
+      "keywords": ["improvisation", "complex rhythms", "fusion"],
+      "origin": "USA/UK, late 1960s"
+    },
+    {
+      "id": "glam_metal",
+      "name": "Glam Metal",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 115,
+      "bpm_max": 155,
+      "keywords": ["hair metal", "flashy", "party rock"],
+      "origin": "USA, early 1980s"
+    },
+    {
+      "id": "pop_rock",
+      "name": "Pop Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["accessible", "melodic", "radio-friendly rock"],
+      "origin": "USA/UK, 1960s"
+    },
+    {
+      "id": "soft_rock",
+      "name": "Soft Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 85,
+      "bpm_max": 125,
+      "keywords": ["mellow", "polished production", "adult pop"],
+      "origin": "USA, early 1970s"
+    },
+    {
+      "id": "lo_fi_garage",
+      "name": "Lo-Fi Garage",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 115,
+      "bpm_max": 165,
+      "keywords": ["raw recordings", "garage aesthetic", "reverb"],
+      "origin": "USA/Australia, 2000s"
+    },
+    {
+      "id": "garage_revival",
+      "name": "Garage Rock Revival",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 120,
+      "bpm_max": 170,
+      "keywords": ["raw simplicity", "blues influence", "back to basics"],
+      "origin": "USA/Australia, early 2000s"
+    },
+    {
+      "id": "christian_rock",
+      "name": "Christian Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 155,
+      "keywords": ["religious themes", "inspirational", "mainstream rock sound"],
+      "origin": "USA, 1960s"
+    },
+    {
+      "id": "midwest_rock",
+      "name": "Midwest Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["heartland", "honest", "working class"],
+      "origin": "USA Midwest, 1970s–1980s"
+    },
+    {
+      "id": "doo_wop_rock",
+      "name": "Doo-Wop Rock",
+      "parent_main": "rock",
+      "parent": "rock_classic",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["vocal harmonies", "1950s nostalgia", "street corner"],
+      "origin": "USA, early 1950s"
+    },
+    {
+      "id": "alternative_rock",
+      "name": "Alternative Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 95,
+      "bpm_max": 150,
+      "keywords": ["college radio", "non-mainstream", "guitar-driven"],
+      "origin": "USA/UK, early 1980s"
+    },
+    {
+      "id": "indie_rock",
+      "name": "Indie Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["DIY", "lo-fi roots", "guitar pop"],
+      "origin": "USA/UK, mid-1980s"
+    },
+    {
+      "id": "college_rock",
+      "name": "College Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["jangly", "introspective", "independent"],
+      "origin": "USA, 1980s"
+    },
+    {
+      "id": "dream_pop",
+      "name": "Dream Pop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 75,
+      "bpm_max": 120,
+      "keywords": ["ethereal", "breathy vocals", "atmospheric"],
+      "origin": "UK/USA, mid-1980s"
+    },
+    {
+      "id": "shoegaze",
+      "name": "Shoegaze",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["wall of sound", "reverb-drenched", "feedback guitars"],
+      "origin": "UK, late 1980s"
+    },
+    {
+      "id": "jangle_pop",
+      "name": "Jangle Pop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["12-string guitar", "chiming", "melodic"],
+      "origin": "USA/UK, early 1980s"
+    },
+    {
+      "id": "twee_pop",
+      "name": "Twee Pop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["cute", "innocent", "lo-fi"],
+      "origin": "UK, mid-1980s"
+    },
+    {
+      "id": "c86",
+      "name": "C86",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["jangly indie", "shambling", "NME tape"],
+      "origin": "UK, 1986"
+    },
+    {
+      "id": "slowcore",
+      "name": "Slowcore",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 55,
+      "bpm_max": 90,
+      "keywords": ["minimal", "glacial tempo", "sparse"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "sadcore",
+      "name": "Sadcore",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 55,
+      "bpm_max": 95,
+      "keywords": ["melancholic", "hushed vocals", "desolate"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "lofi_indie",
+      "name": "Lo-Fi Indie",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 80,
+      "bpm_max": 130,
+      "keywords": ["tape hiss", "home recording", "raw"],
+      "origin": "USA, late 1980s"
+    },
+    {
+      "id": "bedroom_pop",
+      "name": "Bedroom Pop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 75,
+      "bpm_max": 125,
+      "keywords": ["home studio", "intimate", "lo-fi aesthetic"],
+      "origin": "USA/UK, 2010s"
+    },
+    {
+      "id": "math_rock",
+      "name": "Math Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 165,
+      "keywords": ["odd time signatures", "polyrhythm", "technical guitar"],
+      "origin": "USA, late 1980s"
+    },
+    {
+      "id": "emo",
+      "name": "Emo",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 155,
+      "keywords": ["emotional", "confessional lyrics", "post-hardcore roots"],
+      "origin": "USA, mid-1980s"
+    },
+    {
+      "id": "midwest_emo",
+      "name": "Midwest Emo",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["twinkly guitar", "spoken-word passages", "earnest"],
+      "origin": "USA Midwest, early 1990s"
+    },
+    {
+      "id": "emo_pop",
+      "name": "Emo Pop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 110,
+      "bpm_max": 155,
+      "keywords": ["catchy hooks", "emotional", "polished"],
+      "origin": "USA, early 2000s"
+    },
+    {
+      "id": "emo_revival",
+      "name": "Emo Revival",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 155,
+      "keywords": ["twinkly guitar", "2010s emo", "DIY scene"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "post_rock",
+      "name": "Post-Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 60,
+      "bpm_max": 130,
+      "keywords": ["cinematic", "build and release", "instrumental"],
+      "origin": "UK/USA, early 1990s"
+    },
+    {
+      "id": "post_hardcore",
+      "name": "Post-Hardcore",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 120,
+      "bpm_max": 185,
+      "keywords": ["dynamic shifts", "screamed and clean vocals", "dissonant"],
+      "origin": "USA, mid-1980s"
+    },
+    {
+      "id": "noise_rock",
+      "name": "Noise Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 175,
+      "keywords": ["abrasive", "feedback", "dissonant guitar"],
+      "origin": "USA, early 1980s"
+    },
+    {
+      "id": "riot_grrrl",
+      "name": "Riot Grrrl",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 130,
+      "bpm_max": 175,
+      "keywords": ["feminist punk", "DIY", "confrontational"],
+      "origin": "USA Pacific Northwest, early 1990s"
+    },
+    {
+      "id": "slacker_rock",
+      "name": "Slacker Rock",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 85,
+      "bpm_max": 130,
+      "keywords": ["laid-back", "lo-fi", "distorted lazy"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "indie_pop",
+      "name": "Indie Pop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 90,
+      "bpm_max": 140,
+      "keywords": ["melodic", "gentle", "independent spirit"],
+      "origin": "UK, mid-1980s"
+    },
+    {
+      "id": "britpop",
+      "name": "Britpop",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 148,
+      "keywords": ["British", "guitar pop", "laddish"],
+      "origin": "UK, early 1990s"
+    },
+    {
+      "id": "britpop_revival",
+      "name": "Britpop Revival",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 148,
+      "keywords": ["British indie", "laddish guitars", "2010s"],
+      "origin": "UK, 2010s"
+    },
+    {
+      "id": "neo_psychedelia",
+      "name": "Neo-Psychedelia",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 80,
+      "bpm_max": 135,
+      "keywords": ["modern psychedelia", "studio experimentation", "mind-bending"],
+      "origin": "USA/UK, 1980s"
+    },
+    {
+      "id": "chillwave",
+      "name": "Chillwave",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 80,
+      "bpm_max": 115,
+      "keywords": ["hazy", "nostalgic", "lo-fi electronics"],
+      "origin": "USA, late 2000s"
+    },
+    {
+      "id": "indietronica",
+      "name": "Indietronica",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 95,
+      "bpm_max": 135,
+      "keywords": ["indie meets electronic", "laptop production", "experimental pop"],
+      "origin": "UK/USA, late 1990s"
+    },
+    {
+      "id": "freak_folk",
+      "name": "Freak Folk",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 70,
+      "bpm_max": 120,
+      "keywords": ["avant-garde folk", "eccentric", "psychedelic"],
+      "origin": "USA, 2000s"
+    },
+    {
+      "id": "twee_indie",
+      "name": "Twee Indie",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 85,
+      "bpm_max": 130,
+      "keywords": ["childlike innocence", "cutesy", "soft indie"],
+      "origin": "UK/USA, 1980s"
+    },
+    {
+      "id": "shoegazer_revival",
+      "name": "Shoegazer Revival",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["2010s shoegaze", "modern wall of sound", "neo-shoegaze"],
+      "origin": "USA/UK, 2010s"
+    },
+    {
+      "id": "jangle_indie",
+      "name": "Jangle Indie",
+      "parent_main": "indie",
+      "parent": "alternative",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["bright guitar tone", "melodic indie", "harmonic"],
+      "origin": "USA/UK, 1980s"
+    },
+    {
+      "id": "grunge",
+      "name": "Grunge",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 90,
+      "bpm_max": 145,
+      "keywords": ["distorted guitar", "angst", "flannel"],
+      "origin": "Seattle USA, late 1980s"
+    },
+    {
+      "id": "post_grunge",
+      "name": "Post-Grunge",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["commercial grunge", "polished", "melodic"],
+      "origin": "USA, mid-1990s"
+    },
+    {
+      "id": "nu_metal",
+      "name": "Nu-Metal",
+      "parent_main": "metal",
+      "parent": "grunge_90s",
+      "bpm_min": 90,
+      "bpm_max": 150,
+      "keywords": ["downtuned guitar", "rap verses", "angst"],
+      "origin": "USA, mid-1990s"
+    },
+    {
+      "id": "rap_rock",
+      "name": "Rap Rock",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 90,
+      "bpm_max": 145,
+      "keywords": ["rap vocals", "rock instrumentation", "hybrid"],
+      "origin": "USA, late 1980s"
+    },
+    {
+      "id": "rap_metal",
+      "name": "Rap Metal",
+      "parent_main": "metal",
+      "parent": "grunge_90s",
+      "bpm_min": 95,
+      "bpm_max": 150,
+      "keywords": ["rap vocals", "heavy riffs", "crossover"],
+      "origin": "USA, late 1980s"
+    },
+    {
+      "id": "funk_metal",
+      "name": "Funk Metal",
+      "parent_main": "metal",
+      "parent": "grunge_90s",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["slap bass", "funky grooves", "heavy"],
+      "origin": "USA, mid-1980s"
+    },
+    {
+      "id": "stoner_rock",
+      "name": "Stoner Rock",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 70,
+      "bpm_max": 115,
+      "keywords": ["heavy riff", "fuzz", "desert vibe"],
+      "origin": "USA California, early 1990s"
+    },
+    {
+      "id": "desert_rock",
+      "name": "Desert Rock",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 75,
+      "bpm_max": 120,
+      "keywords": ["dry sound", "fuzz pedal", "Palm Springs"],
+      "origin": "Palm Desert California, early 1990s"
+    },
+    {
+      "id": "sludge_rock",
+      "name": "Sludge Rock",
+      "parent_main": "metal",
+      "parent": "grunge_90s",
+      "bpm_min": 55,
+      "bpm_max": 105,
+      "keywords": ["down-tempo", "heavy sludge", "abrasive"],
+      "origin": "USA South, early 1990s"
+    },
+    {
+      "id": "alternative_metal",
+      "name": "Alternative Metal",
+      "parent_main": "metal",
+      "parent": "grunge_90s",
+      "bpm_min": 90,
+      "bpm_max": 155,
+      "keywords": ["unconventional", "experimental metal", "crossover"],
+      "origin": "USA, mid-1980s"
+    },
+    {
+      "id": "grebo",
+      "name": "Grebo",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["UK underground", "noisy", "hybrid"],
+      "origin": "UK Midlands, late 1980s"
+    },
+    {
+      "id": "stoner_psych",
+      "name": "Stoner Psych",
+      "parent_main": "rock",
+      "parent": "grunge_90s",
+      "bpm_min": 70,
+      "bpm_max": 115,
+      "keywords": ["heavy psych", "fuzz", "mind-expanding"],
+      "origin": "USA, 1990s"
+    },
+    {
+      "id": "punk_rock",
+      "name": "Punk Rock",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 150,
+      "bpm_max": 210,
+      "keywords": ["three-chord", "anti-establishment", "raw energy"],
+      "origin": "USA/UK, 1974–1976"
+    },
+    {
+      "id": "hardcore_punk",
+      "name": "Hardcore Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 160,
+      "bpm_max": 240,
+      "keywords": ["fast", "aggressive", "short songs"],
+      "origin": "USA, late 1970s"
+    },
+    {
+      "id": "pop_punk",
+      "name": "Pop Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 145,
+      "bpm_max": 200,
+      "keywords": ["catchy", "teenage angst", "melodic punk"],
+      "origin": "USA/UK, mid-1970s, revival 1990s"
+    },
+    {
+      "id": "skate_punk",
+      "name": "Skate Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 155,
+      "bpm_max": 210,
+      "keywords": ["fast melodic", "skate culture", "California"],
+      "origin": "California USA, early 1980s"
+    },
+    {
+      "id": "anarcho_punk",
+      "name": "Anarcho-Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 150,
+      "bpm_max": 220,
+      "keywords": ["anarchism", "political", "DIY ethics"],
+      "origin": "UK, late 1970s"
+    },
+    {
+      "id": "crust_punk",
+      "name": "Crust Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 200,
+      "keywords": ["dirty sound", "d-beat", "apocalyptic"],
+      "origin": "UK, early 1980s"
+    },
+    {
+      "id": "oi",
+      "name": "Oi!",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 140,
+      "bpm_max": 190,
+      "keywords": ["working class", "street", "gang vocals"],
+      "origin": "UK, late 1970s"
+    },
+    {
+      "id": "street_punk",
+      "name": "Street Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 140,
+      "bpm_max": 195,
+      "keywords": ["mohawk", "studs", "urban"],
+      "origin": "UK/USA, early 1980s"
+    },
+    {
+      "id": "ska_punk",
+      "name": "Ska Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 150,
+      "bpm_max": 210,
+      "keywords": ["offbeat ska", "horn section", "energetic"],
+      "origin": "USA/UK, mid-1980s"
+    },
+    {
+      "id": "ska_core",
+      "name": "Ska-Core",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 155,
+      "bpm_max": 215,
+      "keywords": ["ska rhythm", "hardcore aggression", "horns"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "celtic_punk",
+      "name": "Celtic Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 145,
+      "bpm_max": 200,
+      "keywords": ["fiddle", "Irish folk", "rowdy"],
+      "origin": "UK/Ireland, early 1980s"
+    },
+    {
+      "id": "horror_punk",
+      "name": "Horror Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 140,
+      "bpm_max": 195,
+      "keywords": ["horror imagery", "B-movie", "campy"],
+      "origin": "USA New Jersey, late 1970s"
+    },
+    {
+      "id": "psychobilly",
+      "name": "Psychobilly",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 145,
+      "bpm_max": 200,
+      "keywords": ["rockabilly meets punk", "slap bass", "horror themes"],
+      "origin": "UK, early 1980s"
+    },
+    {
+      "id": "cowpunk",
+      "name": "Cowpunk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 190,
+      "keywords": ["country punk", "twang", "raw"],
+      "origin": "USA, early 1980s"
+    },
+    {
+      "id": "power_pop",
+      "name": "Power Pop",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 175,
+      "keywords": ["hooks", "jangly guitar", "catchy"],
+      "origin": "USA/UK, mid-1970s"
+    },
+    {
+      "id": "garage_punk",
+      "name": "Garage Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 185,
+      "keywords": ["lo-fi", "sloppy", "rawer punk"],
+      "origin": "USA, 1960s revival 1990s"
+    },
+    {
+      "id": "deathrock",
+      "name": "Deathrock",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 110,
+      "bpm_max": 165,
+      "keywords": ["horror gothic", "macabre", "post-punk darkness"],
+      "origin": "USA California, early 1980s"
+    },
+    {
+      "id": "peace_punk",
+      "name": "Peace Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 145,
+      "bpm_max": 210,
+      "keywords": ["pacifism", "anarchist", "British"],
+      "origin": "UK, early 1980s"
+    },
+    {
+      "id": "queercore",
+      "name": "Queercore",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 150,
+      "bpm_max": 220,
+      "keywords": ["LGBTQ+", "radical", "anti-homophobia"],
+      "origin": "USA/Canada, mid-1980s"
+    },
+    {
+      "id": "dance_punk",
+      "name": "Dance-Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 120,
+      "bpm_max": 165,
+      "keywords": ["danceable", "punk rhythm", "funk influenced"],
+      "origin": "USA/UK, early 2000s"
+    },
+    {
+      "id": "folk_punk",
+      "name": "Folk Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 185,
+      "keywords": ["acoustic instruments", "folk storytelling", "DIY"],
+      "origin": "UK/USA, early 1980s"
+    },
+    {
+      "id": "gypsy_punk",
+      "name": "Gypsy Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 135,
+      "bpm_max": 185,
+      "keywords": ["Eastern European", "accordion", "frenetic"],
+      "origin": "Eastern Europe/USA, 1990s"
+    },
+    {
+      "id": "art_punk",
+      "name": "Art Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 120,
+      "bpm_max": 190,
+      "keywords": ["avant-garde", "experimental", "conceptual"],
+      "origin": "USA/UK, mid-1970s"
+    },
+    {
+      "id": "d_beat",
+      "name": "D-Beat",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 160,
+      "bpm_max": 230,
+      "keywords": ["Discharge beat", "war metal influence", "Swedish"],
+      "origin": "UK/Sweden, early 1980s"
+    },
+    {
+      "id": "egg_punk",
+      "name": "Egg Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 140,
+      "bpm_max": 200,
+      "keywords": ["lo-fi internet", "satirical", "DIY absurdist"],
+      "origin": "USA/internet, 2010s"
+    },
+    {
+      "id": "screamo",
+      "name": "Screamo",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 220,
+      "keywords": ["screamed vocals", "emotional intensity", "chaotic"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "melodic_hardcore",
+      "name": "Melodic Hardcore",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 150,
+      "bpm_max": 220,
+      "keywords": ["melodic punk", "hardcore speed", "anthemic"],
+      "origin": "USA/Sweden, early 1980s"
+    },
+    {
+      "id": "proto_punk",
+      "name": "Proto-Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 120,
+      "bpm_max": 180,
+      "keywords": ["pre-punk raw", "Velvet Underground lineage", "primitive rock"],
+      "origin": "USA, late 1960s–early 1970s"
+    },
+    {
+      "id": "glam_punk",
+      "name": "Glam Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 130,
+      "bpm_max": 185,
+      "keywords": ["glamorous aesthetics", "sleazy rock", "androgynous punk"],
+      "origin": "USA New York, early 1970s"
+    },
+    {
+      "id": "trallpunk",
+      "name": "Trallpunk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 155,
+      "bpm_max": 215,
+      "keywords": ["Swedish melodic punk", "fast", "singalong"],
+      "origin": "Sweden, early 1990s"
+    },
+    {
+      "id": "synth_punk",
+      "name": "Synth-Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 135,
+      "bpm_max": 200,
+      "keywords": ["synths replace guitar", "raw electronic", "cold"],
+      "origin": "UK/Europe, late 1970s"
+    },
+    {
+      "id": "punk_blues",
+      "name": "Punk Blues",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 120,
+      "bpm_max": 175,
+      "keywords": ["raw blues", "garage attitude", "primitive"],
+      "origin": "USA/UK, 2000s"
+    },
+    {
+      "id": "neon_pop_punk",
+      "name": "Neon Pop Punk",
+      "parent_main": "punk",
+      "parent": "punk",
+      "bpm_min": 140,
+      "bpm_max": 185,
+      "keywords": ["synths", "pop punk energy", "colorful aesthetic"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "heavy_metal",
+      "name": "Heavy Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 110,
+      "bpm_max": 170,
+      "keywords": ["power chords", "loud", "leather and studs"],
+      "origin": "UK/USA, late 1960s"
+    },
+    {
+      "id": "proto_metal",
+      "name": "Proto-Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["pre-metal", "heavy blues rock", "70s predecessor"],
+      "origin": "UK/USA, late 1960s"
+    },
+    {
+      "id": "nwobhm",
+      "name": "NWOBHM",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 175,
+      "keywords": ["New Wave British Heavy Metal", "twin guitar", "galloping"],
+      "origin": "UK, late 1970s"
+    },
+    {
+      "id": "power_metal",
+      "name": "Power Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 140,
+      "bpm_max": 200,
+      "keywords": ["epic", "high falsetto", "fantasy themes"],
+      "origin": "Germany/Europe, mid-1980s"
+    },
+    {
+      "id": "speed_metal",
+      "name": "Speed Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 160,
+      "bpm_max": 220,
+      "keywords": ["fast tempos", "aggressive", "bridge heavy-thrash"],
+      "origin": "USA/UK, early 1980s"
+    },
+    {
+      "id": "thrash_metal",
+      "name": "Thrash Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 160,
+      "bpm_max": 230,
+      "keywords": ["tight riffing", "palm muted", "aggressive"],
+      "origin": "USA California, early 1980s"
+    },
+    {
+      "id": "crossover_thrash",
+      "name": "Crossover Thrash",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 160,
+      "bpm_max": 240,
+      "keywords": ["thrash meets hardcore", "moshing", "fast"],
+      "origin": "USA, mid-1980s"
+    },
+    {
+      "id": "death_metal",
+      "name": "Death Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 160,
+      "bpm_max": 260,
+      "keywords": ["guttural vocals", "blast beats", "gore themes"],
+      "origin": "USA Florida, mid-1980s"
+    },
+    {
+      "id": "melodic_death_metal",
+      "name": "Melodic Death Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 145,
+      "bpm_max": 220,
+      "keywords": ["melody with aggression", "Gothenburg sound", "twin guitar harmony"],
+      "origin": "Sweden Gothenburg, early 1990s"
+    },
+    {
+      "id": "technical_death_metal",
+      "name": "Technical Death Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 160,
+      "bpm_max": 280,
+      "keywords": ["complex riffs", "virtuosic", "odd time signatures"],
+      "origin": "USA, late 1980s"
+    },
+    {
+      "id": "brutal_death_metal",
+      "name": "Brutal Death Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 170,
+      "bpm_max": 290,
+      "keywords": ["ultra-heavy", "slam riffs", "subhuman vocals"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "slam_metal",
+      "name": "Slam Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 80,
+      "bpm_max": 200,
+      "keywords": ["breakdown-centric", "guttural", "mosh pit"],
+      "origin": "USA New York, early 1990s"
+    },
+    {
+      "id": "black_metal",
+      "name": "Black Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 140,
+      "bpm_max": 270,
+      "keywords": ["tremolo picking", "corpse paint", "lo-fi production"],
+      "origin": "Norway/Scandinavia, early 1980s"
+    },
+    {
+      "id": "atmospheric_black_metal",
+      "name": "Atmospheric Black Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 75,
+      "bpm_max": 180,
+      "keywords": ["ambient textures", "nature themes", "epic"],
+      "origin": "Europe, 1990s"
+    },
+    {
+      "id": "ambient_black_metal",
+      "name": "Ambient Black Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 60,
+      "bpm_max": 180,
+      "keywords": ["synth layers", "black metal", "meditative"],
+      "origin": "Norway/Europe, early 1990s"
+    },
+    {
+      "id": "depressive_black_metal",
+      "name": "Depressive Black Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 60,
+      "bpm_max": 180,
+      "keywords": ["suicidal themes", "raw", "minimal"],
+      "origin": "Europe, mid-1990s"
+    },
+    {
+      "id": "raw_black_metal",
+      "name": "Raw Black Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 270,
+      "keywords": ["bedroom recording", "ultra lo-fi", "primitive"],
+      "origin": "Europe, early 1990s"
+    },
+    {
+      "id": "blackgaze",
+      "name": "Blackgaze",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 90,
+      "bpm_max": 185,
+      "keywords": ["shoegaze atmosphere", "black metal aggression", "ethereal"],
+      "origin": "France, 2000s"
+    },
+    {
+      "id": "war_metal",
+      "name": "War Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 150,
+      "bpm_max": 280,
+      "keywords": ["chaotic", "militaristic", "bestial black"],
+      "origin": "Canada/USA, early 1990s"
+    },
+    {
+      "id": "black_doom",
+      "name": "Black Doom",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 50,
+      "bpm_max": 145,
+      "keywords": ["black metal darkness", "doom heaviness", "occult"],
+      "origin": "Europe, 1990s"
+    },
+    {
+      "id": "doom_metal",
+      "name": "Doom Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 50,
+      "bpm_max": 100,
+      "keywords": ["slow heavy", "dark atmosphere", "crushing"],
+      "origin": "UK/USA, early 1980s"
+    },
+    {
+      "id": "death_doom",
+      "name": "Death-Doom",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 40,
+      "bpm_max": 90,
+      "keywords": ["ultra slow", "death vocals", "crushing"],
+      "origin": "UK/Europe, early 1990s"
+    },
+    {
+      "id": "funeral_doom",
+      "name": "Funeral Doom",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 20,
+      "bpm_max": 55,
+      "keywords": ["agonizingly slow", "grief", "dissonant"],
+      "origin": "USA/Finland, early 1990s"
+    },
+    {
+      "id": "sludge_metal",
+      "name": "Sludge Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 50,
+      "bpm_max": 105,
+      "keywords": ["hardcore meets doom", "filthy", "Southern"],
+      "origin": "USA Louisiana, early 1990s"
+    },
+    {
+      "id": "stoner_metal",
+      "name": "Stoner Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 65,
+      "bpm_max": 110,
+      "keywords": ["fuzzy riff", "psychedelic", "heavy grooves"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "stoner_doom",
+      "name": "Stoner Doom",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 50,
+      "bpm_max": 90,
+      "keywords": ["crushingly slow", "weed culture", "fuzz"],
+      "origin": "USA, mid-1990s"
+    },
+    {
+      "id": "drone_metal",
+      "name": "Drone Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 20,
+      "bpm_max": 70,
+      "keywords": ["sustained notes", "meditative", "extreme slow"],
+      "origin": "USA, late 1990s"
+    },
+    {
+      "id": "progressive_metal",
+      "name": "Progressive Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 100,
+      "bpm_max": 200,
+      "keywords": ["complex structures", "technical", "long compositions"],
+      "origin": "USA/UK, late 1980s"
+    },
+    {
+      "id": "symphonic_metal",
+      "name": "Symphonic Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 110,
+      "bpm_max": 185,
+      "keywords": ["orchestral", "operatic soprano", "epic"],
+      "origin": "Netherlands/Europe, mid-1990s"
+    },
+    {
+      "id": "gothic_metal",
+      "name": "Gothic Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 80,
+      "bpm_max": 145,
+      "keywords": ["dark romantic", "male-female vocals", "melancholic"],
+      "origin": "UK/Europe, early 1990s"
+    },
+    {
+      "id": "folk_metal",
+      "name": "Folk Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 120,
+      "bpm_max": 195,
+      "keywords": ["folk instruments", "traditional melodies", "pagan themes"],
+      "origin": "UK/Finland, early 1990s"
+    },
+    {
+      "id": "viking_metal",
+      "name": "Viking Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 100,
+      "bpm_max": 190,
+      "keywords": ["Norse mythology", "epic", "clean chants"],
+      "origin": "Norway/Sweden, late 1980s"
+    },
+    {
+      "id": "pagan_metal",
+      "name": "Pagan Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 100,
+      "bpm_max": 185,
+      "keywords": ["nature worship", "ancient cultures", "folk elements"],
+      "origin": "Eastern Europe, early 1990s"
+    },
+    {
+      "id": "celtic_metal",
+      "name": "Celtic Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 120,
+      "bpm_max": 195,
+      "keywords": ["Celtic melodies", "flute and pipes", "folk metal variant"],
+      "origin": "Ireland/UK, early 1990s"
+    },
+    {
+      "id": "pirate_metal",
+      "name": "Pirate Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 195,
+      "keywords": ["nautical themes", "folk instruments", "drinking songs"],
+      "origin": "Germany/Europe, 2000s"
+    },
+    {
+      "id": "grindcore",
+      "name": "Grindcore",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 180,
+      "bpm_max": 350,
+      "keywords": ["blast beats", "ultra fast", "extreme noise"],
+      "origin": "UK, mid-1980s"
+    },
+    {
+      "id": "deathgrind",
+      "name": "Deathgrind",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 180,
+      "bpm_max": 340,
+      "keywords": ["grindcore meets death metal", "brutal", "extreme"],
+      "origin": "USA/UK, late 1980s"
+    },
+    {
+      "id": "powerviolence",
+      "name": "Powerviolence",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 170,
+      "bpm_max": 300,
+      "keywords": ["micro-songs", "extreme tempo shifts", "chaotic hardcore"],
+      "origin": "USA California, early 1990s"
+    },
+    {
+      "id": "mathcore",
+      "name": "Mathcore",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 250,
+      "keywords": ["irregular time signatures", "chaotic", "dissonant"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "metalcore",
+      "name": "Metalcore",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 210,
+      "keywords": ["breakdowns", "dual vocals", "heavy hooks"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "deathcore",
+      "name": "Deathcore",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 140,
+      "bpm_max": 250,
+      "keywords": ["death metal meets metalcore", "pig squeals", "breakdowns"],
+      "origin": "USA, early 2000s"
+    },
+    {
+      "id": "djent",
+      "name": "Djent",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 110,
+      "bpm_max": 200,
+      "keywords": ["palm mute chug", "7-8 string guitar", "polyrhythm"],
+      "origin": "Sweden/USA, 2000s"
+    },
+    {
+      "id": "post_metal",
+      "name": "Post-Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 60,
+      "bpm_max": 140,
+      "keywords": ["atmospheric", "post-rock influence", "dynamic"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "nintendocore",
+      "name": "Nintendocore",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 150,
+      "bpm_max": 240,
+      "keywords": ["chiptune", "video game sounds", "metal fusion"],
+      "origin": "USA, early 2000s"
+    },
+    {
+      "id": "trap_metal",
+      "name": "Trap Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 120,
+      "bpm_max": 170,
+      "keywords": ["808 bass", "metal guitar", "aggressive rap"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "nu_metalcore",
+      "name": "Nu-Metalcore",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 120,
+      "bpm_max": 180,
+      "keywords": ["rap verses", "breakdowns", "2000s nostalgia"],
+      "origin": "USA, 2010s"
+    },
+    {
+      "id": "industrial_metal",
+      "name": "Industrial Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 110,
+      "bpm_max": 175,
+      "keywords": ["machine rhythm", "electronic samples", "aggressive"],
+      "origin": "USA/Germany, late 1980s"
+    },
+    {
+      "id": "neoclassical_metal",
+      "name": "Neoclassical Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 120,
+      "bpm_max": 200,
+      "keywords": ["classical scales", "virtuoso guitar", "baroque influences"],
+      "origin": "Sweden/Europe, 1980s"
+    },
+    {
+      "id": "kawaii_metal",
+      "name": "Kawaii Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 195,
+      "keywords": ["J-pop melody", "heavy metal", "cute aesthetic"],
+      "origin": "Japan, 2010s"
+    },
+    {
+      "id": "christian_metal",
+      "name": "Christian Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 130,
+      "bpm_max": 210,
+      "keywords": ["religious lyrics", "all metal subgenres apply", "white metal"],
+      "origin": "USA, early 1980s"
+    },
+    {
+      "id": "avant_garde_metal",
+      "name": "Avant-Garde Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 80,
+      "bpm_max": 220,
+      "keywords": ["experimental", "unconventional structures", "boundary-pushing metal"],
+      "origin": "Europe/USA, 1990s"
+    },
+    {
+      "id": "dream_metal",
+      "name": "Dream Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 80,
+      "bpm_max": 145,
+      "keywords": ["atmospheric metal", "clean and heavy contrast", "ethereal"],
+      "origin": "USA/Europe, 2000s"
+    },
+    {
+      "id": "punk_metal",
+      "name": "Punk Metal",
+      "parent_main": "metal",
+      "parent": "metal_heavy",
+      "bpm_min": 145,
+      "bpm_max": 220,
+      "keywords": ["speed", "aggression fusion", "early extreme"],
+      "origin": "USA/UK, early 1980s"
+    },
+    {
+      "id": "classic_pop",
+      "name": "Classic Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 85,
+      "bpm_max": 135,
+      "keywords": ["melodic", "polished production", "timeless"],
+      "origin": "USA/UK, 1950s–1960s"
+    },
+    {
+      "id": "dance_pop",
+      "name": "Dance-Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 115,
+      "bpm_max": 135,
+      "keywords": ["four-on-the-floor", "uptempo", "hook-driven"],
+      "origin": "USA/UK, early 1980s"
+    },
+    {
+      "id": "electropop",
+      "name": "Electropop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 115,
+      "bpm_max": 135,
+      "keywords": ["synthesizer dominant", "electronic textures", "modern"],
+      "origin": "UK/USA, early 2000s"
+    },
+    {
+      "id": "synth_pop",
+      "name": "Synth-Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 105,
+      "bpm_max": 135,
+      "keywords": ["synthesizer", "drum machine", "cold wave influence"],
+      "origin": "UK, late 1970s"
+    },
+    {
+      "id": "teen_pop",
+      "name": "Teen Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 110,
+      "bpm_max": 135,
+      "keywords": ["youth appeal", "manufactured", "catchy chorus"],
+      "origin": "USA, late 1990s"
+    },
+    {
+      "id": "bubblegum_pop",
+      "name": "Bubblegum Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 110,
+      "bpm_max": 145,
+      "keywords": ["sweet", "childlike", "sugary hooks"],
+      "origin": "USA, late 1960s"
+    },
+    {
+      "id": "adult_contemporary",
+      "name": "Adult Contemporary",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 75,
+      "bpm_max": 120,
+      "keywords": ["smooth", "radio-friendly", "polished ballads"],
+      "origin": "USA, 1960s–1970s"
+    },
+    {
+      "id": "art_pop",
+      "name": "Art Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 80,
+      "bpm_max": 135,
+      "keywords": ["avant-garde", "theatrical", "experimental pop"],
+      "origin": "UK/USA, 1960s–1970s"
+    },
+    {
+      "id": "baroque_pop",
+      "name": "Baroque Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 80,
+      "bpm_max": 130,
+      "keywords": ["orchestral", "harpsichord", "classical influence"],
+      "origin": "USA/UK, mid-1960s"
+    },
+    {
+      "id": "chamber_pop",
+      "name": "Chamber Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 75,
+      "bpm_max": 125,
+      "keywords": ["string arrangements", "intimate", "orchestrated indie"],
+      "origin": "USA/UK, mid-1990s"
+    },
+    {
+      "id": "sophisti_pop",
+      "name": "Sophisti-Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 95,
+      "bpm_max": 130,
+      "keywords": ["sophisticated", "jazz-influenced", "polished"],
+      "origin": "UK, mid-1980s"
+    },
+    {
+      "id": "yacht_rock",
+      "name": "Yacht Rock",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 85,
+      "bpm_max": 115,
+      "keywords": ["smooth sailing", "soft rock", "California luxury"],
+      "origin": "USA California, mid-1970s"
+    },
+    {
+      "id": "hyperpop",
+      "name": "Hyperpop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 110,
+      "bpm_max": 170,
+      "keywords": ["maximalist", "auto-tune extreme", "digital chaos"],
+      "origin": "UK/internet, early 2010s"
+    },
+    {
+      "id": "k_pop",
+      "name": "K-Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 110,
+      "bpm_max": 150,
+      "keywords": ["choreography", "polished production", "idol system"],
+      "origin": "South Korea, 1990s"
+    },
+    {
+      "id": "j_pop",
+      "name": "J-Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["Japanese melody", "cute aesthetic", "anime ties"],
+      "origin": "Japan, 1990s"
+    },
+    {
+      "id": "mandopop",
+      "name": "Mandopop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 85,
+      "bpm_max": 130,
+      "keywords": ["Mandarin lyrics", "ballad heavy", "Asian pop"],
+      "origin": "Taiwan/China, 1980s"
+    },
+    {
+      "id": "city_pop",
+      "name": "City Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 95,
+      "bpm_max": 125,
+      "keywords": ["smooth 80s Japan", "sophisticated", "nostalgia"],
+      "origin": "Japan, late 1970s"
+    },
+    {
+      "id": "latin_pop",
+      "name": "Latin Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["Spanish or Portuguese", "rhythm-forward", "global"],
+      "origin": "Latin America/USA, 1960s"
+    },
+    {
+      "id": "sunshine_pop",
+      "name": "Sunshine Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 100,
+      "bpm_max": 135,
+      "keywords": ["cheerful harmonies", "California", "optimistic"],
+      "origin": "USA California, mid-1960s"
+    },
+    {
+      "id": "noise_pop",
+      "name": "Noise Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 95,
+      "bpm_max": 145,
+      "keywords": ["feedback-laden", "pop hooks", "distorted"],
+      "origin": "USA, early 1990s"
+    },
+    {
+      "id": "dark_pop",
+      "name": "Dark Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["moody", "cinematic", "atmospheric vocals"],
+      "origin": "USA/UK, 2010s"
+    },
+    {
+      "id": "experimental_pop",
+      "name": "Experimental Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 70,
+      "bpm_max": 140,
+      "keywords": ["unconventional structures", "avant-garde", "boundary-pushing"],
+      "origin": "USA/UK, 1960s"
+    },
+    {
+      "id": "psychedelic_pop",
+      "name": "Psychedelic Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 90,
+      "bpm_max": 135,
+      "keywords": ["dreamy", "kaleidoscopic", "studio experimentation"],
+      "origin": "USA/UK, mid-1960s"
+    },
+    {
+      "id": "ambient_pop",
+      "name": "Ambient Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 65,
+      "bpm_max": 110,
+      "keywords": ["textural", "atmospheric", "gentle pop"],
+      "origin": "UK/USA, 1990s"
+    },
+    {
+      "id": "hypnagogic_pop",
+      "name": "Hypnagogic Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 80,
+      "bpm_max": 125,
+      "keywords": ["dreamlike", "retro distorted", "memory-warped"],
+      "origin": "USA, late 2000s"
+    },
+    {
+      "id": "bubblegum_bass",
+      "name": "Bubblegum Bass",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 110,
+      "bpm_max": 150,
+      "keywords": ["hyper-feminine", "heavy bass", "cute chaos"],
+      "origin": "UK/internet, 2010s"
+    },
+    {
+      "id": "progressive_pop",
+      "name": "Progressive Pop",
+      "parent_main": "pop",
+      "parent": "pop",
+      "bpm_min": 90,
+      "bpm_max": 140,
+      "keywords": ["complex structures", "orchestration", "pop ambition"],
+      "origin": "USA/UK, 1960s"
+    },
+    {
+      "id": "new_wave",
+      "name": "New Wave",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 105,
+      "bpm_max": 145,
+      "keywords": ["post-punk polish", "synths enter", "quirky"],
+      "origin": "USA/UK, late 1970s"
+    },
+    {
+      "id": "no_wave",
+      "name": "No Wave",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 100,
+      "bpm_max": 175,
+      "keywords": ["avant-garde", "anti-music", "New York"],
+      "origin": "New York USA, late 1970s"
+    },
+    {
+      "id": "cold_wave",
+      "name": "Cold Wave",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 95,
+      "bpm_max": 135,
+      "keywords": ["icy minimalism", "French", "dark synths"],
+      "origin": "France/Belgium, late 1970s"
+    },
+    {
+      "id": "minimal_wave",
+      "name": "Minimal Wave",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 95,
+      "bpm_max": 135,
+      "keywords": ["minimal electronics", "austere", "primitive synth"],
+      "origin": "Europe, early 1980s"
+    },
+    {
+      "id": "darkwave",
+      "name": "Darkwave",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 90,
+      "bpm_max": 130,
+      "keywords": ["gothic", "melancholic", "electronic-post-punk"],
+      "origin": "USA/UK/Germany, early 1980s"
+    },
+    {
+      "id": "goth_rock",
+      "name": "Goth Rock",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 90,
+      "bpm_max": 145,
+      "keywords": ["dark", "bass-driven", "macabre"],
+      "origin": "UK, early 1980s"
+    },
+    {
+      "id": "post_punk",
+      "name": "Post-Punk",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 100,
+      "bpm_max": 160,
+      "keywords": ["angular guitar", "bass-forward", "art sensibility"],
+      "origin": "UK, 1977–1980"
+    },
+    {
+      "id": "post_punk_revival",
+      "name": "Post-Punk Revival",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 110,
+      "bpm_max": 155,
+      "keywords": ["angular guitars", "indie rock energy", "2000s"],
+      "origin": "USA/UK, early 2000s"
+    },
+    {
+      "id": "dance_punk_revival",
+      "name": "Dance-Punk Revival",
+      "parent_main": "rock",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 120,
+      "bpm_max": 160,
+      "keywords": ["disco punk", "danceable angst", "NYC scene"],
+      "origin": "USA New York, early 2000s"
+    },
+    {
+      "id": "neue_deutsche_haerte",
+      "name": "Neue Deutsche Haerte",
+      "parent_main": "metal",
+      "parent": "new_wave_postpunk",
+      "bpm_min": 115,
+      "bpm_max": 165,
+      "keywords": ["German industrial metal", "groove", "mechanical"],
+      "origin": "Germany, mid-1990s"
+    },
+    {
+      "id": "progressive_rock",
+      "name": "Progressive Rock",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 80,
+      "bpm_max": 175,
+      "keywords": ["complex compositions", "concept album", "virtuosic"],
+      "origin": "UK, late 1960s"
+    },
+    {
+      "id": "art_rock",
+      "name": "Art Rock",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 80,
+      "bpm_max": 155,
+      "keywords": ["avant-garde influences", "experimental", "theatrical"],
+      "origin": "UK/USA, late 1960s"
+    },
+    {
+      "id": "symphonic_rock",
+      "name": "Symphonic Rock",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 85,
+      "bpm_max": 160,
+      "keywords": ["orchestral", "grandeur", "concept albums"],
+      "origin": "UK, early 1970s"
+    },
+    {
+      "id": "krautrock",
+      "name": "Krautrock",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 90,
+      "bpm_max": 155,
+      "keywords": ["motorik beat", "experimental German", "trance-like"],
+      "origin": "Germany, late 1960s"
+    },
+    {
+      "id": "space_rock",
+      "name": "Space Rock",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 75,
+      "bpm_max": 130,
+      "keywords": ["cosmic", "delay-heavy", "psychedelic"],
+      "origin": "UK, late 1960s"
+    },
+    {
+      "id": "avant_prog",
+      "name": "Avant-Prog",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 70,
+      "bpm_max": 200,
+      "keywords": ["avant-garde", "anti-commercial", "experimental"],
+      "origin": "Europe, 1970s"
+    },
+    {
+      "id": "zeuhl",
+      "name": "Zeuhl",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 100,
+      "bpm_max": 180,
+      "keywords": ["invented language", "militaristic rhythm", "Magma"],
+      "origin": "France, early 1970s"
+    },
+    {
+      "id": "canterbury",
+      "name": "Canterbury Scene",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 85,
+      "bpm_max": 155,
+      "keywords": ["jazz influences", "wind instruments", "British whimsy"],
+      "origin": "UK Canterbury, late 1960s"
+    },
+    {
+      "id": "neo_prog",
+      "name": "Neo-Prog",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 85,
+      "bpm_max": 165,
+      "keywords": ["1980s prog revival", "accessible", "melodic"],
+      "origin": "UK, early 1980s"
+    },
+    {
+      "id": "rock_in_opposition",
+      "name": "Rock In Opposition",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 80,
+      "bpm_max": 200,
+      "keywords": ["avant-garde collective", "political", "experimental"],
+      "origin": "Europe, late 1970s"
+    },
+    {
+      "id": "experimental_rock",
+      "name": "Experimental Rock",
+      "parent_main": "rock",
+      "parent": "progressive_art",
+      "bpm_min": 60,
+      "bpm_max": 200,
+      "keywords": ["boundary-pushing", "unconventional", "avant-garde"],
+      "origin": "USA/UK, 1960s"
+    },
+    {
+      "id": "tuareg_rock",
+      "name": "Tuareg Rock",
+      "parent_main": "rock",
+      "parent": "niche_regional",
+      "bpm_min": 90,
+      "bpm_max": 135,
+      "keywords": ["Saharan blues", "trance groove", "African desert"],
+      "origin": "Mali/Niger/Algeria, 1990s"
+    },
+    {
+      "id": "sasscore",
+      "name": "Sasscore",
+      "parent_main": "punk",
+      "parent": "niche_regional",
+      "bpm_min": 140,
+      "bpm_max": 210,
+      "keywords": ["sarcastic", "comedic hardcore", "internet meme"],
+      "origin": "USA internet, 2000s"
+    },
+    {
+      "id": "crunkcore",
+      "name": "Crunkcore",
+      "parent_main": "punk",
+      "parent": "niche_regional",
+      "bpm_min": 140,
+      "bpm_max": 185,
+      "keywords": ["crunk beats", "screamo vocals", "scene kid"],
+      "origin": "USA, mid-2000s"
+    },
+    {
+      "id": "seapunk",
+      "name": "Seapunk",
+      "parent_main": "pop",
+      "parent": "niche_regional",
+      "bpm_min": 110,
+      "bpm_max": 145,
+      "keywords": ["aquatic aesthetic", "90s nostalgia", "internet subculture"],
+      "origin": "USA internet, early 2010s"
+    },
+    {
+      "id": "vaportrap",
+      "name": "Vaportrap",
+      "parent_main": "pop",
+      "parent": "niche_regional",
+      "bpm_min": 80,
+      "bpm_max": 130,
+      "keywords": ["vaporwave atmosphere", "trap beats", "nostalgic"],
+      "origin": "USA internet, 2010s"
+    },
+    {
+      "id": "anatolian_rock",
+      "name": "Anatolian Rock",
+      "parent_main": "rock",
+      "parent": "niche_regional",
+      "bpm_min": 100,
+      "bpm_max": 145,
+      "keywords": ["Turkish folk scales", "electric guitar", "psychedelic"],
+      "origin": "Turkey, late 1960s"
+    },
+    {
+      "id": "afropunk",
+      "name": "Afropunk",
+      "parent_main": "punk",
+      "parent": "niche_regional",
+      "bpm_min": 140,
+      "bpm_max": 200,
+      "keywords": ["Black punk culture", "inclusive", "DIY"],
+      "origin": "USA, 2000s"
+    },
+    {
+      "id": "taqwacore",
+      "name": "Taqwacore",
+      "parent_main": "punk",
+      "parent": "niche_regional",
+      "bpm_min": 150,
+      "bpm_max": 210,
+      "keywords": ["Islamic punk", "Muslim youth", "rebellious"],
+      "origin": "USA, 2000s"
+    },
+    {
+      "id": "basque_radical_rock",
+      "name": "Basque Radical Rock",
+      "parent_main": "rock",
+      "parent": "niche_regional",
+      "bpm_min": 140,
+      "bpm_max": 195,
+      "keywords": ["Basque language", "political punk", "radical"],
+      "origin": "Basque Country Spain, 1980s"
+    },
+    {
+      "id": "australasian_rock",
+      "name": "Australasian Rock",
+      "parent_main": "rock",
+      "parent": "niche_regional",
+      "bpm_min": 105,
+      "bpm_max": 155,
+      "keywords": ["Australian raw", "pub rock tradition", "larrikin"],
+      "origin": "Australia, 1970s–1980s"
+    },
+    {
+      "id": "visual_kei",
+      "name": "Visual Kei",
+      "parent_main": "rock",
+      "parent": "niche_regional",
+      "bpm_min": 115,
+      "bpm_max": 175,
+      "keywords": ["elaborate costumes", "glam rock influence", "Japanese"],
+      "origin": "Japan, mid-1980s"
+    },
+    {
+      "id": "cali_punk",
+      "name": "California Hardcore",
+      "parent_main": "punk",
+      "parent": "niche_regional",
+      "bpm_min": 160,
+      "bpm_max": 240,
+      "keywords": ["SoCal scene", "melodic hardcore", "beach anger"],
+      "origin": "California USA, early 1980s"
+    },
+    {
+      "id": "horror_rock",
+      "name": "Horror Rock",
+      "parent_main": "rock",
+      "parent": "niche_regional",
+      "bpm_min": 110,
+      "bpm_max": 165,
+      "keywords": ["horror imagery", "theatrical", "macabre rock"],
+      "origin": "USA/UK, 1970s"
+    },
+    {
+      "id": "industrial_rock",
+      "name": "Industrial Rock",
+      "parent_main": "rock",
+      "parent": "noise_industrial",
+      "bpm_min": 110,
+      "bpm_max": 165,
+      "keywords": ["machine noise", "samples", "harsh"],
+      "origin": "UK/USA, late 1980s"
+    },
+    {
+      "id": "noise_music",
+      "name": "Noise",
+      "parent_main": "rock",
+      "parent": "noise_industrial",
+      "bpm_min": 60,
+      "bpm_max": 200,
+      "keywords": ["feedback", "anti-melody", "extreme volume"],
+      "origin": "USA/Japan, 1970s"
+    },
+    {
+      "id": "japanoise",
+      "name": "Japanoise",
+      "parent_main": "rock",
+      "parent": "noise_industrial",
+      "bpm_min": 60,
+      "bpm_max": 220,
+      "keywords": ["extreme noise", "Merzbow", "brutal feedback"],
+      "origin": "Japan, 1980s"
+    }
+  ]
+}

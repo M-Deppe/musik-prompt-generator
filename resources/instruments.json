@@ -1,0 +1,183 @@
+{
+  "_meta": {
+    "description": "Instrumente — generisch vs. spezifisch, gruppiert nach Familie",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1,
+    "rule": "Limit auf 2-3 Instrumente pro Generation um Verwirrung zu vermeiden"
+  },
+  "families": {
+    "guitars": {
+      "generic_to_specific": {
+        "guitar": [
+          "clean jangly Telecaster",
+          "overdrive crunch",
+          "nylon string fingerpicking",
+          "acoustic strumming",
+          "slide guitar",
+          "distorted electric",
+          "fingerpicked acoustic guitar",
+          "arpeggios",
+          "chorus guitars"
+        ]
+      },
+      "descriptors": [
+        "fingerpicked",
+        "clean electric",
+        "distorted",
+        "arpeggios",
+        "riffs",
+        "slide guitar",
+        "jangly",
+        "acoustic strumming",
+        "power chords",
+        "palm-muted"
+      ]
+    },
+    "drums": {
+      "generic_to_specific": {
+        "drums": [
+          "tight snare",
+          "deep 808",
+          "powerful drums",
+          "thunderous drums",
+          "gated reverb drums",
+          "double bass kick",
+          "rattling hats triplets",
+          "rimshot",
+          "light shaker",
+          "swung drums"
+        ]
+      },
+      "descriptors": [
+        "tight snare",
+        "deep 808",
+        "powerful",
+        "thunderous",
+        "gated reverb",
+        "double bass kick",
+        "rattling hats (triplets)",
+        "rimshot",
+        "light shaker",
+        "swung",
+        "four-on-the-floor",
+        "brushed drums",
+        "log drums",
+        "punchy"
+      ]
+    },
+    "keys_synths": {
+      "generic_to_specific": {
+        "piano": [
+          "soft piano",
+          "warm Rhodes",
+          "upright piano",
+          "grand piano",
+          "gospel piano"
+        ],
+        "synth": [
+          "analog pad synth",
+          "Moog bass",
+          "arpeggiator lead",
+          "warm polysynth",
+          "Juno pads",
+          "supersaw leads",
+          "sparkly synths",
+          "atmospheric synths",
+          "bright plucks",
+          "wobble bass"
+        ]
+      },
+      "descriptors": [
+        "soft piano",
+        "warm Rhodes",
+        "analog synths",
+        "synth pads",
+        "atmospheric synths",
+        "sparkly synths",
+        "bright plucks",
+        "vintage Rhodes",
+        "Juno pads",
+        "supersaw",
+        "arpeggiator"
+      ]
+    },
+    "bass": {
+      "generic_to_specific": {
+        "bass": [
+          "deep rolling bassline",
+          "upright bass",
+          "punchy bass",
+          "tuned 808",
+          "warm bass",
+          "side-chained bass",
+          "Moog bass",
+          "wobble bass",
+          "sub bass"
+        ]
+      },
+      "descriptors": [
+        "deep rolling",
+        "upright",
+        "punchy",
+        "tuned 808",
+        "warm",
+        "side-chained",
+        "rolling",
+        "wobble"
+      ]
+    },
+    "orchestral": {
+      "examples": [
+        "full strings",
+        "brass fanfares",
+        "woodwinds",
+        "horns",
+        "choir",
+        "ethereal choir",
+        "strings with brass",
+        "pizzicato strings",
+        "solo violin",
+        "cello",
+        "timpani"
+      ]
+    },
+    "electronic": {
+      "examples": [
+        "warm analog",
+        "digital glitches",
+        "filter sweeps",
+        "tape saturation",
+        "vinyl crackle",
+        "vocoder",
+        "side-chain pumping"
+      ]
+    },
+    "world_specialty": {
+      "examples": [
+        "santoor",
+        "sitar plucks",
+        "tanpura pad",
+        "waterphone",
+        "sampled vocals",
+        "didgeridoo",
+        "koto",
+        "shakuhachi",
+        "celtic harp",
+        "tin whistle",
+        "log drums"
+      ]
+    },
+    "percussion": {
+      "examples": [
+        "shaker",
+        "tambourine",
+        "congas",
+        "bongos",
+        "djembe",
+        "cowbell",
+        "clap",
+        "snap"
+      ]
+    }
+  }
+}

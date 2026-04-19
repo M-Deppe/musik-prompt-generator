@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "description": "Bracket-Tags fuer Song-Struktur, Dynamik, Performance — 10x maechtiger als Style-Prompts",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1
+  },
+  "structure": {
+    "description": "Song-Sektionen",
+    "tags": [
+      "[Intro]",
+      "[Verse]",
+      "[Verse 1]",
+      "[Verse 2]",
+      "[Verse 3]",
+      "[Pre-Chorus]",
+      "[Chorus]",
+      "[Post-Chorus]",
+      "[Hook]",
+      "[Bridge]",
+      "[Outro]",
+      "[End]",
+      "[Refrain]",
+      "[Instrumental]",
+      "[Interlude]",
+      "[Break]",
+      "[Drop]",
+      "[Build]",
+      "[Solo]",
+      "[Guitar Solo]",
+      "[Breakdown]",
+      "[Fade In]",
+      "[Fade Out]"
+    ]
+  },
+  "dynamic": {
+    "description": "Dynamik-Verlauf-Kontrolle",
+    "tags": [
+      "[Fade In]",
+      "[Fade Out]",
+      "[Swell]",
+      "[Crescendo]",
+      "[Decrescendo]",
+      "[Building Intensity]",
+      "[Climactic]",
+      "[Soft Intro]",
+      "[Big Finish]"
+    ]
+  },
+  "emotional_modifiers": {
+    "description": "Emotionale Faerbung einer Sektion",
+    "tags": [
+      "[Angry Verse]",
+      "[Sad Verse]",
+      "[Triumphant Chorus]",
+      "[Happy Verse]",
+      "[Melancholic Bridge]",
+      "[Euphoric Drop]",
+      "[Dark Breakdown]"
+    ]
+  },
+  "negative": {
+    "description": "Ausschluss-Tags — werden in Style-Prompt ans Ende gesetzt",
+    "tags": [
+      "[no vocals]",
+      "[no autotune]",
+      "[no reverb]",
+      "[no falsetto]",
+      "[no choir]",
+      "[no drums]",
+      "[no synths]",
+      "[no distortion]",
+      "[no electronic elements]",
+      "[no guitar solo]",
+      "[no harsh screech leads]",
+      "[no spoken words]",
+      "[instrumental only]"
+    ]
+  },
+  "performance": {
+    "description": "Spezielle Performance-Anweisungen",
+    "tags": [
+      "[Crowd Sings]",
+      "[Acapella]",
+      "[Break: Silence]",
+      "[Half-Time]",
+      "[Double Time]",
+      "[Key Change]",
+      "[Hyper-Realistic]"
+    ],
+    "notes": {
+      "[Hyper-Realistic]": "Forciert 48kHz Output-Engine in V5",
+      "[Crowd Sings]": "Erzeugt Live-Konzert-Feel, ideal fuer anthemische Chorusse",
+      "[Break: Silence]": "Kompletter Klang-Stopp"
+    }
+  },
+  "advanced_examples": {
+    "description": "Strukturen mit Descriptoren — Best Practice",
+    "examples": [
+      "[Intro: Slow Build, Synth Pad, 15 seconds]",
+      "[Verse 1: Minimal Bass, Whispered Vocals]",
+      "[Pre-Chorus: Rising Swell, Drum Roll]",
+      "[Chorus: Exploding Energy, Full Band, Anthemic]",
+      "[Post-Chorus: Catchy Hook, Synth Lead]",
+      "[Bridge: Half-Time, Emotional, Stripped Back]",
+      "[Guitar Solo: Screaming, Melodic, 20 seconds]",
+      "[Outro: Fade Out, Echoing Vocals]",
+      "[Instrumental Break: Electric Guitar Solo, Shredding, High Pitch]",
+      "[Bridge: Half-Time, Trap Beat Switch, Heavy Bass]"
+    ]
+  },
+  "rules": [
+    "Tag am TOP der Lyrics = globale Anweisung",
+    "Tag DIREKT VOR Sektion = lokal und effektiver",
+    "Tags auf separaten Zeilen vor Sektionen funktionieren am besten",
+    "Kurz halten — 1-3 Worte pro Tag fuer beste Wirkung",
+    "Tag am Anfang der Section ist staerker als am Ende"
+  ]
+}

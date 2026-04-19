@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warme Dark-Palette nach V1-Design */
+  --color-bg: oklch(0.14 0.015 60);
+  --color-panel: oklch(0.18 0.02 60);
+  --color-panel-hover: oklch(0.22 0.025 65);
+  --color-border: oklch(0.28 0.03 60);
+  --color-border-strong: oklch(0.38 0.05 65);
+
+  /* Akzent: Bernstein / Gold */
+  --color-amber: oklch(0.76 0.13 75);
+  --color-amber-strong: oklch(0.82 0.14 80);
+  --color-amber-dim: oklch(0.55 0.09 70);
+  --color-amber-ring: oklch(0.76 0.13 75 / 0.3);
+
+  /* Semantic */
+  --color-success: oklch(0.75 0.15 155);
+  --color-success-dim: oklch(0.6 0.12 155);
+  --color-warn: oklch(0.72 0.16 45);
+  --color-danger: oklch(0.62 0.22 25);
+
+  /* Text */
+  --color-text: oklch(0.92 0.02 75);
+  --color-text-dim: oklch(0.62 0.04 65);
+  --color-text-faint: oklch(0.45 0.03 60);
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  /* background kommt aus <AnimatedBackground/> — body transparent lassen,
+     sonst ueberdeckt der solid body die Blobs. */
+  background: transparent;
+  color: var(--color-text);
+}
+
+/* ============================================================
+   A11y — sichtbarer Fokus-Ring fuer Tastatur-User. :focus-visible
+   statt :focus verhindert den ring bei Mausklick, zeigt ihn aber
+   bei Tab-Navigation. Ring matcht die Amber-Brand-Identitaet.
+   ============================================================ */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip-Link — erscheint nur bei Tab-Fokus, erlaubt Screen-Reader-
+   Usern die Navigation zu ueberspringen. */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--color-panel);
+  color: var(--color-amber);
+  border: 1px solid var(--color-amber);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: top 0.15s;
+}
+.skip-link:focus {
+  top: 8px;
+}
+
+/* sr-only — Inhalt nur fuer Screen-Reader, visuell versteckt. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reduced-Motion — alle aufwendigen Animationen aus, wenn der
+   User prefers-reduced-motion gesetzt hat. Liquid/Aurora/Network
+   werden quasi statisch. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ============================================================
+   Light-Mode — CSS-Variables werden invertiert.
+   body.light-mode swappt Panel/Text/Background/Border.
+   Amber-Akzente bleiben bewusst erhalten damit die Brand-
+   Identitaet konstant bleibt.
+   ============================================================ */
+body.light-mode {
+  --color-bg: oklch(0.96 0.01 75);
+  --color-panel: oklch(0.92 0.012 75);
+  --color-panel-hover: oklch(0.88 0.015 75);
+  --color-border: oklch(0.82 0.02 75);
+  --color-border-strong: oklch(0.7 0.03 75);
+  --color-text: oklch(0.22 0.02 75);
+  --color-text-dim: oklch(0.45 0.02 75);
+  --color-text-faint: oklch(0.6 0.02 75);
+  /* Amber leicht dunkler fuer Light-Mode Kontrast. */
+  --color-amber: oklch(0.55 0.18 65);
+  --color-amber-strong: oklch(0.5 0.2 60);
+  --color-amber-dim: oklch(0.65 0.14 70);
+  --color-amber-ring: oklch(0.55 0.18 65 / 0.25);
+}
+
+/* ============================================================
+   Network-Background — Edges atmen in Opacity, Flow-Edges haben
+   einen wandernden Datenpunkt via stroke-dashoffset, Nodes
+   pulsieren. Alle Animationen GPU-freundlich.
+   ============================================================ */
+@keyframes edge-pulse {
+  0%, 100% { opacity: 0.08; }
+  50% { opacity: 0.22; }
+}
+@keyframes edge-flow {
+  from { stroke-dashoffset: 9999; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes node-pulse {
+  0%, 100% { opacity: 0.35; r: 2.2; }
+  50% { opacity: 0.9; r: 3.2; }
+}
+
+/* ============================================================
+   Liquid-Motion — Blob-Morphing via animiertem border-radius.
+   ============================================================ */
+@keyframes liquid-morph-1 {
+  0%, 100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; transform: translate3d(0,0,0) rotate(0deg) scale(1); }
+  25% { border-radius: 40% 60% 50% 50% / 70% 40% 60% 30%; transform: translate3d(4%,-3%,0) rotate(3deg) scale(1.05); }
+  50% { border-radius: 50% 50% 30% 70% / 40% 60% 40% 60%; transform: translate3d(8%,5%,0) rotate(-2deg) scale(0.95); }
+  75% { border-radius: 70% 30% 60% 40% / 30% 50% 70% 50%; transform: translate3d(-3%,4%,0) rotate(5deg) scale(1.03); }
+}
+@keyframes liquid-morph-2 {
+  0%, 100% { border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%; transform: translate3d(0,0,0) rotate(0deg) scale(1); }
+  33% { border-radius: 30% 70% 60% 40% / 50% 50% 40% 60%; transform: translate3d(-5%,6%,0) rotate(-4deg) scale(1.08); }
+  66% { border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%; transform: translate3d(3%,-4%,0) rotate(6deg) scale(0.95); }
+}
+@keyframes liquid-morph-3 {
+  0%, 100% { border-radius: 45% 55% 60% 40% / 55% 45% 50% 50%; transform: translate3d(0,0,0) rotate(0deg) scale(1); }
+  20% { border-radius: 60% 40% 30% 70% / 40% 65% 35% 60%; transform: translate3d(3%,5%,0) rotate(4deg) scale(1.06); }
+  50% { border-radius: 35% 65% 55% 45% / 70% 30% 60% 40%; transform: translate3d(-4%,-2%,0) rotate(-3deg) scale(0.97); }
+  80% { border-radius: 55% 45% 70% 30% / 30% 60% 40% 70%; transform: translate3d(5%,3%,0) rotate(2deg) scale(1.02); }
+}
+
+/* ============================================================
+   Stream — horizontale Licht-Bahnen driften durch Viewport.
+   ============================================================ */
+@keyframes data-stream-ltr {
+  from { transform: translate3d(-100%, 0, 0); }
+  to { transform: translate3d(0, 0, 0); }
+}
+@keyframes data-stream-rtl {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-100%, 0, 0); }
+}
+
+/* ============================================================
+   Aurora — wabernde Lichtbaender mit Position/Rotation/Scale.
+   ============================================================ */
+@keyframes aurora-drift-1 {
+  0%, 100% { transform: translate3d(-50%,-10%,0) rotate(-8deg) scale(1); }
+  50% { transform: translate3d(-48%,12%,0) rotate(-4deg) scale(1.1); }
+}
+@keyframes aurora-drift-2 {
+  0%, 100% { transform: translate3d(-50%,8%,0) rotate(6deg) scale(1.05); }
+  50% { transform: translate3d(-52%,-8%,0) rotate(10deg) scale(0.95); }
+}
+@keyframes aurora-drift-3 {
+  0%, 100% { transform: translate3d(-50%,0%,0) rotate(-4deg) scale(1); }
+  33% { transform: translate3d(-47%,-12%,0) rotate(-8deg) scale(1.08); }
+  66% { transform: translate3d(-53%,10%,0) rotate(-1deg) scale(0.92); }
+}
+
+/* Subtle entrance — Sections faden beim Mount einmalig ein. */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.45s ease-out both;
+}
+
+/* Glow-Utility fuer aktive Amber-Elemente. */
+.amber-glow {
+  box-shadow:
+    0 0 0 1px oklch(0.76 0.13 75 / 0.3),
+    0 0 24px -4px oklch(0.76 0.13 75 / 0.35);
+}
+
+/* scrollbar für dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-strong);
+}

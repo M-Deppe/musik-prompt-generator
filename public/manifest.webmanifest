@@ -1,0 +1,29 @@
+{
+  "name": "Musik Prompt Generator V1",
+  "short_name": "MPG",
+  "description": "Prompt-Workstation fuer Suno und Udio mit lokaler Ollama-Anbindung",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a1812",
+  "theme_color": "#c8a55c",
+  "lang": "de",
+  "categories": ["music", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Neues Prompt",
+      "short_name": "Neu",
+      "url": "/?action=new",
+      "description": "Starte mit leerem Prompt"
+    }
+  ]
+}

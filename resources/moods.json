@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "description": "Mood-Keywords gruppiert nach Energie-Polaritaet mit Konflikt-Paaren",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1
+  },
+  "groups": {
+    "uplifting": [
+      "euphoric",
+      "triumphant",
+      "uplifting",
+      "happy",
+      "anthemic",
+      "optimistic",
+      "joyful",
+      "hopeful",
+      "confident",
+      "feel-good"
+    ],
+    "melancholic": [
+      "nostalgic",
+      "melancholy",
+      "bittersweet",
+      "wistful",
+      "somber",
+      "longing",
+      "sad",
+      "reflective",
+      "introspective"
+    ],
+    "dark": [
+      "brooding",
+      "dark",
+      "menacing",
+      "ominous",
+      "mysterious",
+      "sinister",
+      "haunting",
+      "gritty",
+      "tense"
+    ],
+    "calm": [
+      "peaceful",
+      "calm",
+      "serene",
+      "gentle",
+      "soft",
+      "intimate",
+      "dreamy",
+      "ethereal",
+      "atmospheric",
+      "chill"
+    ],
+    "aggressive": [
+      "aggressive",
+      "intense",
+      "powerful",
+      "angry",
+      "rebellious",
+      "raw",
+      "savage",
+      "fierce"
+    ],
+    "romantic": [
+      "romantic",
+      "passionate",
+      "sensual",
+      "tender",
+      "vulnerable",
+      "yearning"
+    ],
+    "cinematic": [
+      "epic",
+      "cinematic",
+      "dramatic",
+      "climactic",
+      "grand",
+      "sweeping"
+    ]
+  },
+  "conflict_pairs": [
+    ["aggressive", "peaceful"],
+    ["aggressive", "calm"],
+    ["aggressive", "gentle"],
+    ["intense", "calm"],
+    ["angry", "peaceful"],
+    ["euphoric", "brooding"],
+    ["happy", "somber"],
+    ["happy", "sad"],
+    ["uplifting", "melancholy"],
+    ["triumphant", "somber"],
+    ["dark", "feel-good"],
+    ["menacing", "joyful"],
+    ["gentle", "raw"],
+    ["soft", "savage"]
+  ]
+}

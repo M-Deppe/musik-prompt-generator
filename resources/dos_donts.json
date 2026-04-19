@@ -1,0 +1,159 @@
+{
+  "_meta": {
+    "description": "Validator-Regeln: Was funktioniert, was nicht",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1
+  },
+  "hard_limits": {
+    "style_prompt_v3": 200,
+    "style_prompt_v4_v5": 1000,
+    "lyrics": 3000,
+    "lines_per_verse_max": 8,
+    "lines_per_verse_min": 4,
+    "lines_per_chorus_max": 4,
+    "lines_per_chorus_min": 2
+  },
+  "soft_limits": {
+    "descriptors_sweet_spot_min": 4,
+    "descriptors_sweet_spot_max": 7,
+    "tags_total_min": 8,
+    "tags_total_max": 20,
+    "instruments_per_generation_max": 3
+  },
+  "dos": [
+    {
+      "rule": "Front-load wichtigste Tags",
+      "reason": "Suno liest links-nach-rechts, erste Woerter haben mehr Gewicht"
+    },
+    {
+      "rule": "Spezifische Instrumente statt generische",
+      "example": "clean jangly Telecaster statt guitar"
+    },
+    {
+      "rule": "BPM angeben",
+      "reason": "Ankert Groove und Tempo"
+    },
+    {
+      "rule": "Bracket-Tags fuer Struktur nutzen",
+      "reason": "10x maechtiger als Style-Prompt allein"
+    },
+    {
+      "rule": "Komma-separierte Descriptoren statt voller Saetze",
+      "reason": "Suno parst Tags, nicht Sprache"
+    },
+    {
+      "rule": "3-5 Varianten generieren und beste nehmen",
+      "reason": "AI-Output ist stochastisch"
+    },
+    {
+      "rule": "Segmentweise generieren (~1:30), dann Extend",
+      "reason": "Volle Songs in einem Zug -> AI verliert Beat"
+    },
+    {
+      "rule": "Vocals zuerst im Prompt",
+      "reason": "Suno priorisiert Links-Position"
+    }
+  ],
+  "donts": [
+    {
+      "rule": "Keine Befehle wie 'create', 'make', 'generate'",
+      "reason": "Suno ist Vibe-Parser, nicht Command-Line"
+    },
+    {
+      "rule": "Keine technischen Instruktionen (4/4, 'make bass louder')",
+      "reason": "Werden ignoriert"
+    },
+    {
+      "rule": "Keine Kuenstlernamen",
+      "reason": "Rechtsrisiko und wird weniger zuverlaessig; beschreibe sonische Signatur"
+    },
+    {
+      "rule": "Keine widerspruechlichen Mood-Tags",
+      "example": "aggressive + peaceful = destabilisiert"
+    },
+    {
+      "rule": "Keine vagen Prompts wie 'Pop song about love'",
+      "reason": "Nr. 1 Failure-Mode"
+    },
+    {
+      "rule": "Keine generischen Genre-Labels",
+      "example": "'rock' -> nutze 'post-punk' oder 'indie rock'"
+    },
+    {
+      "rule": "Keine vollen Saetze im Style-Prompt",
+      "reason": "Komma-separierte Descriptoren performen besser"
+    },
+    {
+      "rule": "Nicht >20 Tags",
+      "reason": "Dilution-Effekt"
+    },
+    {
+      "rule": "Nicht <5 Tags",
+      "reason": "Zu generisch"
+    },
+    {
+      "rule": "Keine ueberlangen Lyrics-Sektionen",
+      "reason": "Vocal-Delivery wird gehetzt"
+    },
+    {
+      "rule": "Style-Prompt und Lyrics-Ton muessen zusammenpassen",
+      "reason": "Misalignment produziert inkonsistente Ergebnisse"
+    }
+  ],
+  "auto_validations": [
+    {
+      "check": "prompt_length",
+      "condition": "> hard_limits.style_prompt_v4_v5",
+      "message": "Style-Prompt ueberschreitet 1000 Zeichen — wird still abgeschnitten"
+    },
+    {
+      "check": "descriptor_count",
+      "condition": "> soft_limits.descriptors_sweet_spot_max",
+      "message": "Mehr als 7 Descriptoren — Risiko Dilution-Effekt"
+    },
+    {
+      "check": "descriptor_count",
+      "condition": "< soft_limits.descriptors_sweet_spot_min",
+      "message": "Weniger als 4 Descriptoren — zu generisch"
+    },
+    {
+      "check": "mood_conflict",
+      "reference": "moods.json conflict_pairs",
+      "message": "Widerspruechliche Moods erkannt"
+    },
+    {
+      "check": "instrument_count",
+      "condition": "> soft_limits.instruments_per_generation_max",
+      "message": "Mehr als 3 Instrumente — Suno koennte verwirren"
+    },
+    {
+      "check": "forbidden_keywords",
+      "keywords": ["create", "make", "generate", "compose", "please"],
+      "message": "Befehls-Keywords erkannt — Suno ignoriert Kommandos"
+    },
+    {
+      "check": "bpm_range_fit",
+      "reference": "genres.json bpm_min/bpm_max",
+      "message": "BPM liegt ausserhalb der typischen Range fuer dieses Genre"
+    },
+    {
+      "check": "has_bpm",
+      "condition": "missing",
+      "message": "Kein BPM angegeben — Groove ist unverankert"
+    }
+  ],
+  "magic_words": {
+    "top_10_universal": [
+      "spacious",
+      "vocal-forward",
+      "radio-ready mix",
+      "polished production",
+      "wide stereo field",
+      "crisp high-end",
+      "warm bass",
+      "punchy",
+      "studio quality",
+      "broadcast quality"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "description": "10 Genre-Templates aus dem Master-Guide, kommentiert mit Prompt-Logik",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1
+  },
+  "templates": [
+    {
+      "id": "indie_pop_anthem",
+      "name": "Indie-Pop Anthem",
+      "genre": "indie_pop",
+      "style_prompt": "indie pop, clean guitar arps, warm pads, tight kick, bright female vocals, 102-112 BPM, polished mix",
+      "bpm": 108,
+      "explanation": "Genre fuehrend, dann Instrumente (3 reichen), dann Vocal-Charakter, BPM-Range fuer Tempo-Anker, Production am Ende. Fuenf-Part-Formel exemplarisch."
+    },
+    {
+      "id": "lofi_study",
+      "name": "Lo-Fi Study Beat",
+      "genre": "lofi",
+      "style_prompt": "lofi hip hop, swung drums, vintage Rhodes, soft bass, no vocals, 70-84 BPM, dusty vinyl crackle, -12 LUFS vibe",
+      "bpm": 76,
+      "explanation": "Negative 'no vocals' crowdet Vocals raus. 'dusty vinyl crackle' triggert Lo-Fi-Produktion. LUFS als Vibe-Referenz ist Experten-Move."
+    },
+    {
+      "id": "melodic_house",
+      "name": "Melodic House",
+      "genre": "melodic_house",
+      "style_prompt": "melodic house, side-chained bass, bright plucks, euphoric, 120-126 BPM, wide stereo field, festival energy",
+      "bpm": 124,
+      "explanation": "Side-chained bass ist kritisches Detail fuer House. Wide stereo field + festival energy = Big Room-Production ohne zu viele Instrumente zu listen."
+    },
+    {
+      "id": "trap_banger",
+      "name": "Trap Banger",
+      "genre": "trap",
+      "style_prompt": "trap, rattling triplet hats, tuned 808, sparse keys, confident male vocals, 140 BPM half-time feel, punchy compressed mix",
+      "bpm": 140,
+      "explanation": "Half-time feel ist Genre-Indikator. Sparse keys belaesst Platz fuer Vocals. Triplet hats = Trap-Signature."
+    },
+    {
+      "id": "cinematic_trailer",
+      "name": "Cinematic Trailer Pop",
+      "genre": "cinematic",
+      "style_prompt": "cinematic pop, epic orchestral swells, powerful female vocals, light choir oohs, 88-110 BPM, triumphant, stadium reverb",
+      "bpm": 100,
+      "explanation": "Stadium reverb = Trailer-Sound. 'Light choir oohs' statt voller Choir verhindert Overload. Triumphant mood koppelt an Genre."
+    },
+    {
+      "id": "acoustic_folk",
+      "name": "Acoustic Folk Story",
+      "genre": "acoustic_folk",
+      "style_prompt": "acoustic folk, fingerpicked guitar, light shaker, soft pads, warm male vocals, storytelling delivery, 90 BPM, intimate close",
+      "bpm": 90,
+      "explanation": "'Intimate close' triggert Dry-Room-Produktion. 'Storytelling delivery' fuer narrative Vocals. Minimalistische Instrumentierung."
+    },
+    {
+      "id": "synthwave_night_drive",
+      "name": "Synthwave Night-Drive",
+      "genre": "synthwave",
+      "style_prompt": "synthwave, analog bass, gated snares, chorus guitars, Juno pads, 84-108 BPM, 80s neon nostalgia, polished retro production",
+      "bpm": 96,
+      "explanation": "Gated snares = 80s-Signature. Juno pads ist spezifischer als 'synth pads'. '80s neon nostalgia' als Vibe-Keyword."
+    },
+    {
+      "id": "amapiano_afro",
+      "name": "Afro-Pop / Amapiano",
+      "genre": "amapiano",
+      "style_prompt": "amapiano, afro-pop groove, call-and-response chorus, swing feel, log drums, warm bass, 106 BPM, feel-good energy",
+      "bpm": 106,
+      "explanation": "Log drums = Amapiano-Signature. Call-and-response + swing feel koppeln Rhythm und Vocal-Struktur."
+    },
+    {
+      "id": "kpop_hook",
+      "name": "K-Pop Hook Factory",
+      "genre": "kpop",
+      "style_prompt": "k-pop, sparkly synths, tight drums, bass drops, stacked harmonies, high contrast sections, 126 BPM, radio-ready mix",
+      "bpm": 126,
+      "explanation": "'High contrast sections' ist K-Pop-typisch (Breakdown-Drop-Wechsel). Stacked harmonies = Layered Vocals ohne zu spezifisch zu werden."
+    },
+    {
+      "id": "neo_soul",
+      "name": "R&B / Neo-Soul",
+      "genre": "rnb",
+      "style_prompt": "neo-soul, smooth female vocals, warm Rhodes, upright bass, soulful delivery, 78 BPM, intimate, analog warmth",
+      "bpm": 78,
+      "explanation": "'Analog warmth' + 'intimate' = Neo-Soul-Sound. Upright bass statt elektrisch ist stilistisch genau. Langsames Tempo (78 BPM) als Anker."
+    }
+  ]
+}

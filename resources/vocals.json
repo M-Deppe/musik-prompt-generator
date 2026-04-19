@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "description": "Drei-Schichten-Vokal-System: Character + Delivery + Effects",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1
+  },
+  "character": {
+    "description": "Wer singt — Stimmtyp, Alter, Persoenlichkeit",
+    "examples": [
+      "raspy female vocals",
+      "smooth baritone",
+      "young male tenor",
+      "deep female alto",
+      "ethereal soprano",
+      "weathered storyteller voice",
+      "seasoned jazz crooner",
+      "rebellious punk attitude",
+      "young indie singer, slightly off-key charm",
+      "confident male rapper",
+      "gospel powerhouse vocalist"
+    ],
+    "ranges": ["soprano", "alto", "tenor", "baritone", "bass"],
+    "tones": [
+      "warm",
+      "bright",
+      "rich",
+      "dark",
+      "light",
+      "resonant",
+      "smooth",
+      "rough",
+      "clear",
+      "breathy",
+      "soulful",
+      "vulnerable",
+      "airy",
+      "nasal",
+      "smoky"
+    ]
+  },
+  "delivery": {
+    "description": "Wie wird gesungen — Technik und Attitude",
+    "examples": [
+      "breathy",
+      "powerful belt",
+      "whispered",
+      "spoken word",
+      "drawl",
+      "falsetto",
+      "aggressive",
+      "intimate",
+      "passionate",
+      "gentle",
+      "storytelling",
+      "anthemic"
+    ],
+    "technique_tags": [
+      "[Whispered]",
+      "[Soft]",
+      "[Gentle]",
+      "[Quiet]",
+      "[Spoken]",
+      "[Spoken Word]",
+      "[Powerful]",
+      "[Belted]",
+      "[Shouted]",
+      "[Screamed]",
+      "[Growled]",
+      "[Intense]",
+      "[Falsetto]",
+      "[Head Voice]",
+      "[Chest Voice]",
+      "[Breathy]",
+      "[Raspy]",
+      "[Smooth]",
+      "[Soulful]",
+      "[Operatic]",
+      "[Nasal]",
+      "[Airy]",
+      "[Harmonies]",
+      "[Ad-libs]",
+      "[Vocal Run]",
+      "[Melisma]",
+      "[Vibrato]",
+      "[Staccato]",
+      "[Legato]",
+      "[Call and Response]",
+      "[Chant]",
+      "[Choir]"
+    ],
+    "rap_tags": [
+      "[Rapped]",
+      "[Fast Rap]",
+      "[Slow Flow]",
+      "[Melodic Rap]",
+      "[Trap Flow]",
+      "[Boom Bap Flow]",
+      "[Mumble Rap]",
+      "[Double Time]"
+    ]
+  },
+  "effects": {
+    "description": "Produktions-Effekte auf die Stimme",
+    "examples": [
+      "reverb-drenched",
+      "dry close-mic",
+      "doubled harmonies",
+      "lo-fi filtered",
+      "auto-tuned",
+      "layered harmonies",
+      "compressed vocals",
+      "natural vocal dynamics",
+      "vocal-forward",
+      "stacked harmonies"
+    ]
+  },
+  "inline_cues": {
+    "description": "Klammer-Hinweise direkt im Lyrics-Text",
+    "cues": [
+      "(whispered)",
+      "(belted)",
+      "(spoken word)",
+      "(harmonized)",
+      "(ad-lib)",
+      "(falsetto)",
+      "(building intensity)",
+      "(stripped back)",
+      "(key change)",
+      "(half-time feel)",
+      "(fading)",
+      "(echoing)"
+    ]
+  },
+  "gender_options": [
+    "female",
+    "male",
+    "non-binary / androgynous",
+    "duet (male and female)",
+    "choir / ensemble",
+    "instrumental (no vocals)"
+  ]
+}

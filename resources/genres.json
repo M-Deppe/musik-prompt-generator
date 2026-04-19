@@ -1,0 +1,309 @@
+{
+  "_meta": {
+    "description": "Genre-Katalog mit BPM-Ranges, typischen Keywords und Standard-Instrumenten",
+    "source": "Suno_AI_Prompt_Mastery_Guide.md",
+    "version": 1
+  },
+  "genres": [
+    {
+      "id": "lofi",
+      "name": "Lo-fi",
+      "bpm_min": 70,
+      "bpm_max": 84,
+      "keywords": ["dusty", "vinyl crackle", "warm Rhodes", "swung drums", "-12 LUFS vibe"],
+      "instruments": ["vintage Rhodes", "soft bass", "swung drums"],
+      "vocal_default": "optional, often instrumental",
+      "production": "lo-fi, tape warmth"
+    },
+    {
+      "id": "rnb",
+      "name": "R&B / Neo-Soul",
+      "bpm_min": 70,
+      "bpm_max": 90,
+      "keywords": ["smooth", "soulful", "groove", "neo-soul", "intimate"],
+      "instruments": ["warm Rhodes", "upright bass", "soft drums"],
+      "vocal_default": "smooth female or male vocals, soulful delivery",
+      "production": "analog warmth"
+    },
+    {
+      "id": "hiphop",
+      "name": "Hip-Hop",
+      "bpm_min": 82,
+      "bpm_max": 95,
+      "keywords": ["boom bap", "808", "trap", "flow"],
+      "instruments": ["deep 808", "tight snare", "sampled vocals"],
+      "vocal_default": "rapped vocals, confident delivery",
+      "production": "punchy compressed mix"
+    },
+    {
+      "id": "reggaeton",
+      "name": "Reggaeton",
+      "bpm_min": 90,
+      "bpm_max": 100,
+      "keywords": ["dembow rhythm", "steady bass", "rimshot"],
+      "instruments": ["dembow drums", "steady bass", "rimshot"],
+      "vocal_default": "rhythmic vocals, spanish or english",
+      "production": "loud and punchy"
+    },
+    {
+      "id": "indie_folk",
+      "name": "Indie Folk",
+      "bpm_min": 84,
+      "bpm_max": 100,
+      "keywords": ["fingerpicked", "shaker", "narrative", "intimate close"],
+      "instruments": ["fingerpicked acoustic guitar", "light shaker", "soft pads"],
+      "vocal_default": "warm storytelling vocals",
+      "production": "intimate close"
+    },
+    {
+      "id": "pop",
+      "name": "Pop",
+      "bpm_min": 102,
+      "bpm_max": 118,
+      "keywords": ["bright synths", "catchy hook", "radio-ready"],
+      "instruments": ["shimmering synths", "tight drums", "clean guitar arps"],
+      "vocal_default": "bright vocals, polished",
+      "production": "polished radio-ready mix"
+    },
+    {
+      "id": "indie_pop",
+      "name": "Indie Pop",
+      "bpm_min": 102,
+      "bpm_max": 112,
+      "keywords": ["dreamy", "nostalgic", "shimmering synths"],
+      "instruments": ["clean guitar arps", "warm pads", "tight kick"],
+      "vocal_default": "dreamy female or male vocals",
+      "production": "polished mix"
+    },
+    {
+      "id": "rock",
+      "name": "Rock",
+      "bpm_min": 120,
+      "bpm_max": 140,
+      "keywords": ["driving guitars", "powerful drums"],
+      "instruments": ["overdrive guitar", "powerful drums", "bass"],
+      "vocal_default": "powerful vocals",
+      "production": "full band, loud"
+    },
+    {
+      "id": "house",
+      "name": "House",
+      "bpm_min": 120,
+      "bpm_max": 126,
+      "keywords": ["side-chained bass", "plucks", "euphoric"],
+      "instruments": ["side-chained bass", "bright plucks", "four-on-the-floor kick"],
+      "vocal_default": "optional vocal chops or vocal hooks",
+      "production": "wide stereo field, festival energy"
+    },
+    {
+      "id": "melodic_house",
+      "name": "Melodic House",
+      "bpm_min": 120,
+      "bpm_max": 126,
+      "keywords": ["euphoric", "emotional", "bright plucks"],
+      "instruments": ["side-chained bass", "bright plucks", "atmospheric synths"],
+      "vocal_default": "ethereal vocal chops",
+      "production": "wide stereo field"
+    },
+    {
+      "id": "techno",
+      "name": "Techno",
+      "bpm_min": 130,
+      "bpm_max": 145,
+      "keywords": ["minimal", "hypnotic", "industrial"],
+      "instruments": ["four-on-the-floor kick", "analog bass", "hypnotic leads"],
+      "vocal_default": "rarely vocal, often instrumental",
+      "production": "industrial, driving"
+    },
+    {
+      "id": "trance",
+      "name": "Trance",
+      "bpm_min": 132,
+      "bpm_max": 142,
+      "keywords": ["euphoric", "uplifting", "supersaw leads", "breakdown"],
+      "instruments": ["supersaw leads", "rolling bass", "pluck arps"],
+      "vocal_default": "ethereal female vocals, anthemic",
+      "production": "big stereo field, epic reverb"
+    },
+    {
+      "id": "trap",
+      "name": "Trap",
+      "bpm_min": 130,
+      "bpm_max": 150,
+      "keywords": ["half-time feel", "808", "triplet hats"],
+      "instruments": ["tuned 808", "rattling triplet hats", "sparse keys"],
+      "vocal_default": "confident male vocals, melodic rap",
+      "production": "punchy compressed mix"
+    },
+    {
+      "id": "synthwave",
+      "name": "Synthwave",
+      "bpm_min": 84,
+      "bpm_max": 108,
+      "keywords": ["80s neon nostalgia", "gated reverb", "analog"],
+      "instruments": ["analog bass", "gated snares", "chorus guitars", "Juno pads"],
+      "vocal_default": "optional retro vocals",
+      "production": "polished retro production"
+    },
+    {
+      "id": "cinematic",
+      "name": "Cinematic / Trailer",
+      "bpm_min": 88,
+      "bpm_max": 110,
+      "keywords": ["epic", "triumphant", "stadium reverb"],
+      "instruments": ["epic orchestral swells", "light choir oohs", "percussion"],
+      "vocal_default": "powerful female vocals, optional choir",
+      "production": "stadium reverb, cinematic"
+    },
+    {
+      "id": "acoustic_folk",
+      "name": "Acoustic Folk",
+      "bpm_min": 80,
+      "bpm_max": 100,
+      "keywords": ["storytelling", "warm", "intimate"],
+      "instruments": ["fingerpicked guitar", "light shaker", "soft pads"],
+      "vocal_default": "warm male or female vocals, storytelling",
+      "production": "intimate close"
+    },
+    {
+      "id": "amapiano",
+      "name": "Amapiano / Afro-Pop",
+      "bpm_min": 100,
+      "bpm_max": 115,
+      "keywords": ["swing feel", "log drums", "feel-good"],
+      "instruments": ["log drums", "warm bass", "piano chords"],
+      "vocal_default": "call-and-response chorus",
+      "production": "groovy, warm"
+    },
+    {
+      "id": "kpop",
+      "name": "K-Pop",
+      "bpm_min": 118,
+      "bpm_max": 132,
+      "keywords": ["sparkly", "high contrast", "stacked harmonies"],
+      "instruments": ["sparkly synths", "tight drums", "bass drops"],
+      "vocal_default": "stacked female or mixed harmonies",
+      "production": "radio-ready mix"
+    },
+    {
+      "id": "jazz",
+      "name": "Jazz",
+      "bpm_min": 90,
+      "bpm_max": 140,
+      "keywords": ["smoky", "swing", "improvisation"],
+      "instruments": ["upright bass", "brushed drums", "jazz piano", "saxophone"],
+      "vocal_default": "seasoned jazz crooner, smoky delivery",
+      "production": "warm analog, live feel"
+    },
+    {
+      "id": "classical",
+      "name": "Classical / Orchestral",
+      "bpm_min": 60,
+      "bpm_max": 140,
+      "keywords": ["orchestral", "emotional", "dynamic range"],
+      "instruments": ["full strings", "brass fanfares", "woodwinds"],
+      "vocal_default": "optional soprano or choir",
+      "production": "cathedral reverb"
+    },
+    {
+      "id": "metal",
+      "name": "Metal",
+      "bpm_min": 120,
+      "bpm_max": 180,
+      "keywords": ["aggressive", "heavy", "distorted"],
+      "instruments": ["distorted guitars", "double bass kick", "thunderous drums"],
+      "vocal_default": "screamed or growled vocals",
+      "production": "compressed and loud"
+    },
+    {
+      "id": "punk",
+      "name": "Punk",
+      "bpm_min": 140,
+      "bpm_max": 180,
+      "keywords": ["raw", "rebellious", "fast"],
+      "instruments": ["distorted guitar", "driving bass", "fast drums"],
+      "vocal_default": "rebellious punk attitude",
+      "production": "raw, unpolished"
+    },
+    {
+      "id": "reggae",
+      "name": "Reggae",
+      "bpm_min": 60,
+      "bpm_max": 90,
+      "keywords": ["warm", "groove", "steady", "offbeat"],
+      "instruments": ["rimshot percussion", "steady bass", "skank guitar"],
+      "vocal_default": "warm vocals, melodic",
+      "production": "warm reggae groove"
+    },
+    {
+      "id": "ambient",
+      "name": "Ambient",
+      "bpm_min": 60,
+      "bpm_max": 90,
+      "keywords": ["atmospheric", "drone", "ethereal"],
+      "instruments": ["atmospheric synths", "drones", "textures"],
+      "vocal_default": "rarely vocal, often ethereal pads",
+      "production": "cathedral reverb, vast expansive"
+    },
+    {
+      "id": "drum_and_bass",
+      "name": "Drum & Bass",
+      "bpm_min": 170,
+      "bpm_max": 180,
+      "keywords": ["fast breaks", "rolling bass", "energetic"],
+      "instruments": ["amen break", "rolling bass", "synth stabs"],
+      "vocal_default": "optional female vocal chops",
+      "production": "wide stereo field, punchy"
+    },
+    {
+      "id": "dubstep",
+      "name": "Dubstep",
+      "bpm_min": 138,
+      "bpm_max": 145,
+      "keywords": ["wobble", "heavy", "drop"],
+      "instruments": ["wobble bass", "snare hits on 3", "growl synths"],
+      "vocal_default": "optional vocal chops",
+      "production": "aggressive, compressed"
+    },
+    {
+      "id": "country",
+      "name": "Country",
+      "bpm_min": 80,
+      "bpm_max": 130,
+      "keywords": ["twangy", "storytelling", "warm"],
+      "instruments": ["acoustic guitar", "slide guitar", "fiddle", "banjo"],
+      "vocal_default": "drawl vocals, storytelling",
+      "production": "warm, live feel"
+    },
+    {
+      "id": "gospel_trap",
+      "name": "Gospel Trap",
+      "bpm_min": 130,
+      "bpm_max": 150,
+      "keywords": ["choir", "triumphant", "808"],
+      "instruments": ["choir", "tuned 808", "triplet hats", "piano"],
+      "vocal_default": "powerful gospel vocals, choir layers",
+      "production": "dramatic, punchy"
+    },
+    {
+      "id": "baroque_dubstep",
+      "name": "Baroque + Dubstep (Fusion)",
+      "bpm_min": 138,
+      "bpm_max": 145,
+      "keywords": ["harpsichord", "wobble", "dramatic"],
+      "instruments": ["harpsichord", "wobble bass", "strings"],
+      "vocal_default": "optional operatic vocals",
+      "production": "dramatic, compressed"
+    },
+    {
+      "id": "celtic_electronic",
+      "name": "Celtic + Electronic (Fusion)",
+      "bpm_min": 100,
+      "bpm_max": 140,
+      "keywords": ["ethereal", "celtic", "electronic textures"],
+      "instruments": ["celtic harp", "whistles", "electronic beats", "synth pads"],
+      "vocal_default": "ethereal female vocals, celtic feel",
+      "production": "wide stereo field, atmospheric"
+    }
+  ]
+}
