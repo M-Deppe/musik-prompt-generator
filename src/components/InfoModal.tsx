@@ -30,10 +30,10 @@ const IMPRINT = {
     { h: "Anbieter", p: "Martin Deppe" },
     { h: "Kontakt", p: "martindeppe1@googlemail.com" },
     { h: "Anwendung", p: "Musik Prompt Generator V1 — Open-Source-Tool zur Erstellung von Style-Prompts für AI-Musik-Tools wie Suno und Udio. Lokaler Einsatz, keine Datensammlung. Lizenz: MIT." },
-    { h: "Keine Affiliation", p: "Dieses Projekt steht in keiner Verbindung zu Suno Inc., Udio AI, Anthropic PBC oder OpenAI. „Suno", „Udio", „Claude" und „GPT" sind Marken der jeweiligen Inhaber und werden hier ausschließlich nominativ genannt, um den Einsatzzweck zu beschreiben." },
+    { h: "Keine Affiliation", p: "Dieses Projekt steht in keiner Verbindung zu Suno Inc., Udio AI, Anthropic PBC oder OpenAI. 'Suno', 'Udio', 'Claude' und 'GPT' sind Marken der jeweiligen Inhaber und werden hier ausschließlich nominativ genannt, um den Einsatzzweck zu beschreiben." },
     { h: "Cloud-Fallback", p: "Wenn ein Anthropic- oder OpenAI-API-Key in den Einstellungen hinterlegt wird, werden Prompts direkt aus dem Browser an den jeweiligen Anbieter geschickt. Der Key bleibt lokal im localStorage. Abrechnung, Datenschutz und Nutzungsbedingungen liegen ausschließlich beim gewählten Anbieter." },
     { h: "Generierte Inhalte", p: "Das Tool erzeugt ausschließlich Text-Prompts. Die eigentliche Musikgenerierung erfolgt auf externen Plattformen (Suno/Udio) und unterliegt deren Nutzungsbedingungen. Für kommerzielle Nutzung generierter Musik sind die Plattform-AGBs zu beachten." },
-    { h: "Haftungsausschluss", p: "Die Software wird „wie besehen" bereitgestellt, ohne Gewährleistung jeder Art. Es wird keine Haftung für Schäden übernommen, die durch die Nutzung der Software entstehen. Siehe MIT-Lizenz im Repository." },
+    { h: "Haftungsausschluss", p: "Die Software wird 'wie besehen' bereitgestellt, ohne Gewährleistung jeder Art. Es wird keine Haftung für Schäden übernommen, die durch die Nutzung der Software entstehen. Siehe MIT-Lizenz im Repository." },
   ],
 };
 
