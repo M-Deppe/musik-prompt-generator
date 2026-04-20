@@ -50,6 +50,10 @@ export type PromptState = {
   negatives: string[];
   lyrics: string;
   title: string;
+  // Optionaler Seed-Text, der am Anfang des Roh-Style-Prompts steht. Wird vom
+  // "Aus Idee"-Flow gesetzt, damit das KI-Ergebnis als Basis sichtbar ist und
+  // der User Section-Auswahlen drumherum haengen kann.
+  customStylePrompt?: string;
 };
 
 export type ValidationIssue = {

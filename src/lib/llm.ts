@@ -11,6 +11,7 @@ const generate = (
 ): Promise<string> =>
   ollamaGenerate({ ...opts, cloudFallback: state.settings });
 import { buildStylePrompt } from "./promptBuilder";
+import { sanitizeBuilderOutput, sanitizeOutput } from "./builderSanitizer";
 import { scorePrompt } from "./validator";
 import { getTaskTemperature, type ArrangementLength } from "@/types";
 import {
@@ -95,17 +96,27 @@ export const runLlmBuilder = async (
 ): Promise<void> => {
   dispatch({ type: "LLM_START" });
   const sourceStylePrompt = buildStylePrompt(state.prompt);
+  // Wenn ein BASE-DESCRIPTION-Seed aus "Aus Idee" vorliegt, drosseln wir die
+  // Temperatur aggressiv. Der Job ist dann EDITORIAL (umschreiben, nicht
+  // erfinden) und selbst kleine Ollama-Modelle halluzinieren weniger bei
+  // 0.25-0.35. Bei User-Mode "wild" maximal 0.4.
+  const hasSeed = Boolean(state.prompt.customStylePrompt?.trim());
+  const baseTemp = getTaskTemperature(state.settings.creativityMode, "style");
+  const temperature = hasSeed ? Math.min(baseTemp, 0.35) : baseTemp;
   try {
     const out = await generate(state, {
       baseUrl: state.settings.ollamaUrl,
       model: pickModel(state, "style"),
       system: pickBuilderPrompt(state.settings.target),
       prompt: buildUserPromptFromState(state.prompt),
-      temperature: getTaskTemperature(state.settings.creativityMode, "style"),
+      temperature,
       signal,
       onChunk: (chunk) => dispatch({ type: "LLM_CHUNK", chunk }),
     });
-    const trimmed = out.trim();
+    // Sanitizer: entfernt halluzinierte BPM-Zahlen, erfundene Hersteller-/
+    // Modellnamen und fuegt verlorene Franchise-Referenzen wieder ein.
+    // Deterministisch, greift genre-unabhaengig.
+    const trimmed = sanitizeBuilderOutput(out.trim(), state.prompt);
     dispatch({ type: "LLM_DONE", output: trimmed, sourceStylePrompt });
 
     // Auto-Refine: Score auf Roh-Style-Prompt pruefen. Bei niedrigem Score
@@ -168,7 +179,7 @@ const autoRefineStyleOutput = async (
       // Bewusst KEIN onChunk — sonst wuerden die Chunks via LLM_CHUNK den
       // alten Output ueberschreiben. Wir warten auf das Endergebnis.
     });
-    const refinedTrimmed = refined.trim();
+    const refinedTrimmed = sanitizeBuilderOutput(refined.trim(), state.prompt);
     if (refinedTrimmed && refinedTrimmed !== previousOutput) {
       dispatch({ type: "LLM_DONE", output: refinedTrimmed, sourceStylePrompt });
       dispatch({ type: "LLM_AUTO_REFINED" });
@@ -342,20 +353,26 @@ export const runLlmArrangement = async (
 ): Promise<void> => {
   dispatch({ type: "ARRANGEMENT_START" });
   const stylePrompt = buildStylePrompt(state.prompt);
-  if (!stylePrompt.trim()) {
-    dispatch({ type: "ARRANGEMENT_ERROR", message: "Style-Prompt leer — erst Auswahl treffen" });
+  // Fallback auf llmOutput: wenn der User via "Aus Idee" gestartet hat, ist
+  // state.prompt leer, aber llmOutput enthaelt die Prosa — die nehmen wir dann
+  // als Style-Quelle, sonst waere Arrangement nach Idea-Flow blockiert.
+  const effectiveStyle = stylePrompt.trim() || state.llmOutput.trim();
+  if (!effectiveStyle) {
+    dispatch({ type: "ARRANGEMENT_ERROR", message: "Erst Style oder Idee erzeugen" });
     return;
   }
   try {
-    // Chaining: wenn llmOutput (Prose-Style) vorhanden, ziehe ihn als Kontext mit.
-    const chainContext = state.llmOutput
-      ? `\n\nCONTEXT — the full style description for the song:\n"${state.llmOutput.trim()}"`
-      : "";
+    // Chaining: llmOutput nur als zusaetzlichen Kontext, wenn er sich von der
+    // effektiven Quelle unterscheidet (sonst Dopplung bei Idea-Flow).
+    const chainContext =
+      state.llmOutput && state.llmOutput.trim() !== effectiveStyle
+        ? `\n\nCONTEXT — the full style description for the song:\n"${state.llmOutput.trim()}"`
+        : "";
     const out = await generate(state, {
       baseUrl: state.settings.ollamaUrl,
       model: pickModel(state, "arrangement"),
       system: buildArrangementSystemPrompt(state.settings.arrangementLength),
-      prompt: `Build a song arrangement matching: ${stylePrompt}${chainContext}`,
+      prompt: `Build a song arrangement matching: ${effectiveStyle}${chainContext}`,
       temperature: getTaskTemperature(state.settings.creativityMode, "arrangement"),
       signal,
       onChunk: (chunk) => dispatch({ type: "ARRANGEMENT_CHUNK", chunk }),
@@ -363,7 +380,7 @@ export const runLlmArrangement = async (
     dispatch({
       type: "ARRANGEMENT_DONE",
       output: formatArrangement(out),
-      sourceStylePrompt: stylePrompt,
+      sourceStylePrompt: effectiveStyle,
     });
   } catch (e) {
     if (isAbortError(e)) return;
@@ -393,28 +410,44 @@ export const runStyleAndArrangement = async (
 };
 
 // --- From Idea ------------------------------------------------------------
+// WICHTIG: Der Idea-Flow schreibt bewusst NICHT in state.llmOutput (das Feld,
+// das im Preview als "KI-Ausformulierung" erscheint). Die Prosa wird nur als
+// Seed in state.prompt.customStylePrompt abgelegt und in der Modal selbst
+// vorangezeigt (state.ideaOutput). Der Preview-Bereich fuellt sich erst, wenn
+// der User dort separat auf "Generieren" klickt.
 export const runLlmFromIdea = async (
   state: AppState,
   idea: string,
   dispatch: Dispatch<Action>,
   signal?: AbortSignal,
 ): Promise<void> => {
-  dispatch({ type: "LLM_START" });
+  dispatch({ type: "IDEA_START" });
+  // Fuer den Idea-Flow wollen wir reichhaltige, genre-typische Ausformulierung
+  // (aehnlich ChatGPT). Deshalb nutzen wir die volle User-Temperatur — die
+  // Anti-Halluzinations-Regeln (keine Markennamen, keine BPM-Zahlen, keine
+  // Sprache, kein Genre-Swap) stehen im System-Prompt, nicht in der Temp.
+  const temperature = getTaskTemperature(state.settings.creativityMode, "style");
   try {
     const out = await generate(state, {
       baseUrl: state.settings.ollamaUrl,
       model: pickModel(state, "style"),
       system: pickFromIdeaPrompt(state.settings.target),
       prompt: `Die Idee: "${idea}". Baue daraus einen optimalen Style-Prompt fuer ${state.settings.target === "udio" ? "Udio (als Tag-Liste)" : "Suno (als Prosa)"}.`,
-      temperature: getTaskTemperature(state.settings.creativityMode, "style"),
+      temperature,
       signal,
-      onChunk: (chunk) => dispatch({ type: "LLM_CHUNK", chunk }),
+      onChunk: (chunk) => dispatch({ type: "IDEA_CHUNK", chunk }),
     });
-    dispatch({ type: "LLM_DONE", output: out.trim(), sourceStylePrompt: idea });
+    // Sanitizer mit dem Idea-Text als Quelle — greift bei halluzinierten BPM,
+    // Markennamen und fehlenden Franchise-Referenzen.
+    const trimmed = sanitizeOutput(out.trim(), { source: idea });
+    // Seed setzen: das Idea-Ergebnis landet als Basis im Roh-Style-Prompt,
+    // damit der User per Section-Auswahl dazubauen kann.
+    dispatch({ type: "SET_CUSTOM_STYLE_PROMPT", value: trimmed });
+    dispatch({ type: "IDEA_DONE", output: trimmed });
   } catch (e) {
     if (isAbortError(e)) return;
     dispatch({
-      type: "LLM_ERROR",
+      type: "IDEA_ERROR",
       message: e instanceof Error ? e.message : "Unbekannter Fehler",
     });
   }
@@ -522,7 +555,9 @@ export const runRefinement = async (
     // LLM_DONE einen bereits gecleartem Store ueberschreiben.
     if (signal?.aborted) return;
     if (target === "style") {
-      dispatch({ type: "LLM_DONE", output: out.trim(), sourceStylePrompt: state.llmSourceStylePrompt });
+      // Sanitizer auch hier: Refinement kann neue Halluzinationen einfuehren.
+      const clean = sanitizeBuilderOutput(out.trim(), state.prompt);
+      dispatch({ type: "LLM_DONE", output: clean, sourceStylePrompt: state.llmSourceStylePrompt });
     } else {
       dispatch({
         type: "ARRANGEMENT_DONE",

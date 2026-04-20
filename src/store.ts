@@ -53,6 +53,11 @@ export type AppState = {
   presets: Preset[];
   settingsOpen: boolean;
   ideaOpen: boolean;
+  // Idea-Flow hat eigenen State, damit er die Haupt-KI-Ausformulierung
+  // (llmOutput) nicht ueberschreibt. Preview wird in der Modal selbst gezeigt.
+  ideaLoading: boolean;
+  ideaOutput: string;
+  ideaError?: string;
   infoModal: "manual" | "imprint" | "stats" | null;
   // Wird bei RESET inkrementiert. Layout-Komponenten koennen per key={resetCounter}
   // voll remounted werden — das schliesst lokale AccordionSection-States.
@@ -84,6 +89,7 @@ export type Action =
   | { type: "SET_SECONDARY_GENRE"; genre: string }
   | { type: "SET_SOUNDS_LIKE"; value: string }
   | { type: "SET_SOUNDS_LIKE_DESCRIPTION"; value: string }
+  | { type: "SET_CUSTOM_STYLE_PROMPT"; value: string }
   | { type: "SET_INFO_MODAL"; modal: "manual" | "imprint" | "stats" | null }
   | { type: "TOGGLE_INSTRUMENT"; instrument: string }
   | { type: "TOGGLE_PRODUCTION"; tag: string }
@@ -120,6 +126,11 @@ export type Action =
   | { type: "SET_PRESETS"; presets: Preset[] }
   | { type: "TOGGLE_SETTINGS" }
   | { type: "TOGGLE_IDEA" }
+  | { type: "IDEA_START" }
+  | { type: "IDEA_CHUNK"; chunk: string }
+  | { type: "IDEA_DONE"; output: string }
+  | { type: "IDEA_ERROR"; message: string }
+  | { type: "IDEA_RESET" }
   | { type: "SET_AVAILABLE_MODELS"; models: string[] }
   | { type: "JUDGE_START" }
   | { type: "JUDGE_DONE"; result: JudgeResult | null }
@@ -156,6 +167,8 @@ export const initialState: AppState = {
   presets: [],
   settingsOpen: false,
   ideaOpen: false,
+  ideaLoading: false,
+  ideaOutput: "",
   infoModal: null,
   resetCounter: 0,
   availableModels: [],
@@ -196,6 +209,8 @@ const reducer = (state: AppState, action: Action): AppState => {
       return { ...state, prompt: { ...state.prompt, soundsLike: action.value } };
     case "SET_SOUNDS_LIKE_DESCRIPTION":
       return { ...state, prompt: { ...state.prompt, soundsLikeDescription: action.value } };
+    case "SET_CUSTOM_STYLE_PROMPT":
+      return { ...state, prompt: { ...state.prompt, customStylePrompt: action.value || undefined } };
     case "SET_INFO_MODAL":
       return { ...state, infoModal: action.modal };
     case "TOGGLE_INSTRUMENT":
@@ -303,6 +318,16 @@ const reducer = (state: AppState, action: Action): AppState => {
       return { ...state, settingsOpen: !state.settingsOpen };
     case "TOGGLE_IDEA":
       return { ...state, ideaOpen: !state.ideaOpen };
+    case "IDEA_START":
+      return { ...state, ideaLoading: true, ideaOutput: "", ideaError: undefined };
+    case "IDEA_CHUNK":
+      return { ...state, ideaOutput: state.ideaOutput + action.chunk };
+    case "IDEA_DONE":
+      return { ...state, ideaLoading: false, ideaOutput: action.output };
+    case "IDEA_ERROR":
+      return { ...state, ideaLoading: false, ideaError: action.message };
+    case "IDEA_RESET":
+      return { ...state, ideaOutput: "", ideaError: undefined };
     case "SET_AVAILABLE_MODELS":
       return { ...state, availableModels: action.models };
     case "JUDGE_START":

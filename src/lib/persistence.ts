@@ -175,6 +175,7 @@ export const migratePromptState = (raw: unknown): PromptState => {
     negatives: arr(r.negatives),
     lyrics: str(r.lyrics),
     title: str(r.title),
+    customStylePrompt: optStr(r.customStylePrompt),
   };
 };
 

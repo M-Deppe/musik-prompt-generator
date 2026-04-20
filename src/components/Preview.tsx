@@ -731,7 +731,7 @@ export const Preview = ({ forceShow = false }: { forceShow?: boolean } = {}) => 
             </button>
             <button
               onClick={runArrangement}
-              disabled={state.llmArrangementLoading || !stylePrompt}
+              disabled={state.llmArrangementLoading || (!stylePrompt && !state.llmOutput)}
               className="flex items-center gap-1 rounded-full bg-sky-500 px-3 py-1 text-[11px] font-medium text-neutral-950 transition hover:bg-sky-400 disabled:opacity-40"
             >
               {state.llmArrangementLoading ? (
@@ -927,7 +927,7 @@ export const Preview = ({ forceShow = false }: { forceShow?: boolean } = {}) => 
                 : "https://suno.com/create";
             window.open(targetUrl, "_blank");
           }}
-          disabled={!stylePrompt}
+          disabled={!finalText}
           className="flex items-center justify-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/5 px-4 py-2 text-sm text-sky-400 transition hover:bg-sky-500/15 disabled:opacity-40"
         >
           <ExternalLink size={14} />
@@ -935,7 +935,7 @@ export const Preview = ({ forceShow = false }: { forceShow?: boolean } = {}) => 
         </button>
         <button
           onClick={saveToHistory}
-          disabled={!stylePrompt}
+          disabled={!stylePrompt && !state.llmOutput}
           className="flex items-center justify-center gap-2 rounded-full border border-[var(--color-border)] px-4 py-1.5 text-xs text-[var(--color-text-dim)] hover:text-[var(--color-text)] disabled:opacity-40"
         >
           <Star size={12} />

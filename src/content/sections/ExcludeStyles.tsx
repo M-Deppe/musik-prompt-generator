@@ -84,6 +84,80 @@ const VOCALS: CheckItem[] = [
   { id: "gospel vocals", label: "gospel vocals", hint: "kein Gospel-Chor-Stil" },
 ];
 
+// Typische Suno-Artefakte und Soundprobleme. Quellen: sunoaiwiki.com,
+// howtopromptsuno.com, hookgenius.app, jackrighteous.com, neuralanalog.com.
+// Stand: Suno v5.5 (April 2026). Pragmatisch gruppiert in drei Blocks:
+// 1) Digitale/AI-Artefakte  2) Mix-/Frequenz-Probleme  3) Vocal-Probleme
+// 4) Qualitaets-/Stil-Fallen. "no "-Prefix wird im Builder ergaenzt.
+const ARTIFACTS: CheckItem[] = [
+  // --- 1) Digitale / AI-Artefakte ---
+  { id: "ai artifacts", label: "ai artifacts", hint: "typische AI-Generation-Fehler allgemein" },
+  { id: "shimmer artifacts", label: "shimmer artifacts", hint: "hochfrequentes Flimmern, sehr haeufig bei Suno" },
+  { id: "warbled sound", label: "warbled sound", hint: "Codec-Warbles (Wow/Flutter-Artefakte)" },
+  { id: "chirp artifacts", label: "chirp artifacts", hint: "Kompressions-Chirps (MP3-artig)" },
+  { id: "metallic sound", label: "metallic sound", hint: "blechern-metallischer AI-Klang" },
+  { id: "robotic artifacts", label: "robotic artifacts", hint: "roboterhafter Klang in Instrumenten" },
+  { id: "digital artifacts", label: "digital artifacts", hint: "allgemeine digitale Stoerungen" },
+  { id: "aliasing", label: "aliasing", hint: "digitale Frequenz-Spiegelungen" },
+  { id: "glitch noise", label: "glitch noise", hint: "ungewollte Stutter/Knacks-Stoerer" },
+  { id: "stuttering", label: "stuttering", hint: "ungewollte Wiederholungen/Stotterer" },
+  { id: "static noise", label: "static noise", hint: "Rauschen/Knistern im Signal" },
+  { id: "compression artifacts", label: "compression artifacts", hint: "hoerbare Lossy-Kompressionsreste" },
+  { id: "hiss", label: "hiss", hint: "konstantes Hochton-Rauschen" },
+
+  // --- 2) Mix- / Frequenz-Probleme ---
+  { id: "muddy mix", label: "muddy mix", hint: "Frequenzbrei, fehlende Trennung" },
+  { id: "muddy bass", label: "muddy bass", hint: "undefinierter, verschmierter Bass" },
+  { id: "boxy mids", label: "boxy mids", hint: "kartonig klingende Mitten (200-500 Hz)" },
+  { id: "harsh highs", label: "harsh highs", hint: "schrille/zischelige Hoehen" },
+  { id: "brittle treble", label: "brittle treble", hint: "sproede/ueberbetonte Top-End" },
+  { id: "sibilance", label: "sibilance", hint: "scharfe S/Sch-Laute auf Vocals" },
+  { id: "phasing", label: "phasing", hint: "unerwuenschte Phasen-Ausloeschungen" },
+  { id: "thin sound", label: "thin sound", hint: "duenner Mix, fehlender Koerper" },
+  { id: "hollow sound", label: "hollow sound", hint: "hohler, leerer Gesamtklang" },
+  { id: "tinny sound", label: "tinny sound", hint: "blechern, ohne Bass-Fundament" },
+  { id: "flat mix", label: "flat mix", hint: "leblos, keine Dynamik/Tiefe" },
+  { id: "over-compressed", label: "over-compressed", hint: "totkomprimierter, atemloser Mix" },
+  { id: "pumping", label: "pumping", hint: "ungewolltes Sidechain-Atmen" },
+  { id: "clipping", label: "clipping", hint: "digitale Uebersteuerung/Knacken" },
+  { id: "distorted mix", label: "distorted mix", hint: "verzerrter Gesamtmix (nicht Gitarre)" },
+  { id: "mono sound", label: "mono sound", hint: "fehlendes Stereo-Bild" },
+  { id: "narrow stereo", label: "narrow stereo", hint: "zu enges Stereo-Panorama" },
+  { id: "reverb wash", label: "reverb wash", hint: "zu viel diffuser Hall, alles matscht" },
+  { id: "background noise", label: "background noise", hint: "Stoergeraeusche im Hintergrund" },
+
+  // --- 3) Vocal-Probleme ---
+  { id: "pitchy vocals", label: "pitchy vocals", hint: "unsaubere Intonation" },
+  { id: "robotic vocals", label: "robotic vocals", hint: "mechanisch/unmenschlich" },
+  { id: "warbled vocals", label: "warbled vocals", hint: "verzittelte, schwimmende Stimme" },
+  { id: "slurred vocals", label: "slurred vocals", hint: "verwaschene Aussprache" },
+  { id: "mumbled vocals", label: "mumbled vocals", hint: "genuschelt, unverstaendlich" },
+  { id: "rushed syllables", label: "rushed syllables", hint: "gehetzte/verschluckte Silben" },
+  { id: "mispronunciation", label: "mispronunciation", hint: "falsch ausgesprochene Woerter" },
+  { id: "autotune artifacts", label: "autotune artifacts", hint: "hoerbare Pitch-Correction-Kanten" },
+  { id: "breathy excessive", label: "breathy excessive", hint: "uebertrieben hauchige Stimme" },
+  { id: "nasal vocals", label: "nasal vocals", hint: "naeselnder Stimmklang" },
+  { id: "thin vocals", label: "thin vocals", hint: "duenne, kraftlose Stimme" },
+  { id: "muffled vocals", label: "muffled vocals", hint: "gedaempft/verschluckt" },
+  { id: "off-key vocals", label: "off-key vocals", hint: "schief gesungen" },
+  { id: "unnatural phrasing", label: "unnatural phrasing", hint: "unmenschliches Timing/Phrasierung" },
+
+  // --- 4) Qualitaets- / Stil-Fallen ---
+  { id: "lo-fi quality", label: "lo-fi quality", hint: "bewusst niedrige Qualitaet raus" },
+  { id: "demo quality", label: "demo quality", hint: "unfertig/skizzenhaft" },
+  { id: "garage quality", label: "garage quality", hint: "Kellerproduktion, amateurhaft" },
+  { id: "raw recording", label: "raw recording", hint: "ungemasterter Rohklang" },
+  { id: "dusty sound", label: "dusty sound", hint: "staubiger Lo-Fi-Filter" },
+  { id: "generic sound", label: "generic sound", hint: "austauschbarer Default-Klang" },
+  { id: "boring arrangement", label: "boring arrangement", hint: "langweiliges, flaches Arrangement" },
+  { id: "repetitive loops", label: "repetitive loops", hint: "zu viel Wiederholung ohne Entwicklung" },
+  { id: "style drift", label: "style drift", hint: "Genre-Wechsel mittendrin" },
+  { id: "abrupt ending", label: "abrupt ending", hint: "harter, unaufgeloester Track-Abbruch" },
+  { id: "long fade out", label: "long fade out", hint: "ausgedehntes Fade-Out vermeiden" },
+  { id: "dated sound", label: "dated sound", hint: "altmodisch, nicht zeitgemaess" },
+  { id: "sheen", label: "sheen", hint: "glatte AI-Politur ueber allem" },
+];
+
 const EXCLUDE_GENRES: CheckItem[] = [
   { id: "no trap", label: "no trap" },
   { id: "no edm", label: "no EDM" },
@@ -137,6 +211,10 @@ export const ExcludeStyles = () => {
 
       <AccordionSection title="Ausgeschlossene Vocals" optional selectionCount={sel(VOCALS).length} onClear={() => sel(VOCALS).forEach((id) => dispatch({ type: "TOGGLE_NEGATIVE", tag: id }))}>
         <CheckList items={VOCALS} selected={VOCALS.filter((i) => isExcluded(i.id)).map((i) => i.id)} onToggle={(id) => dispatch({ type: "TOGGLE_NEGATIVE", tag: id })} />
+      </AccordionSection>
+
+      <AccordionSection title="Artefakte & Soundprobleme" optional selectionCount={sel(ARTIFACTS).length} onClear={() => sel(ARTIFACTS).forEach((id) => dispatch({ type: "TOGGLE_NEGATIVE", tag: id }))}>
+        <CheckList items={ARTIFACTS} selected={ARTIFACTS.filter((i) => isExcluded(i.id)).map((i) => i.id)} onToggle={(id) => dispatch({ type: "TOGGLE_NEGATIVE", tag: id })} />
       </AccordionSection>
 
       <AccordionSection title="Ausgeschlossene Genres" optional selectionCount={sel(EXCLUDE_GENRES).length} onClear={() => sel(EXCLUDE_GENRES).forEach((id) => dispatch({ type: "TOGGLE_NEGATIVE", tag: id }))}>

@@ -73,10 +73,16 @@ export const buildStylePrompt = (state: PromptState): string => {
     ? state.negatives.map((n) => (n.startsWith("no ") ? n : `no ${n}`)).join(", ")
     : undefined;
 
+  // Seed aus "Aus Idee"-Flow: steht ganz vorn, damit der User ihn als Basis
+  // sieht und Section-Auswahlen daran anhaengen kann.
+  const customSeedPart = state.customStylePrompt?.trim() || undefined;
+
   // Reihenfolge laut Suno-Research (April 2026):
-  // 1. Genre (+Aera +Fusion)  2. Fusion  3. Mood  4. Vocals  5. Instrumente
-  // 6. Harmonie/Tonart  7. BPM  8. Production  9. Custom-Tags  10. Sound-Ref (end)  11. Negationen (last)
+  // 0. Custom-Seed (aus Idee)  1. Genre (+Aera +Fusion)  2. Fusion  3. Mood
+  // 4. Vocals  5. Instrumente  6. Harmonie/Tonart  7. BPM  8. Production
+  // 9. Custom-Tags  10. Sound-Ref (end)  11. Negationen (last)
   return joinNonEmpty([
+    customSeedPart,
     genrePart,
     fusionPart,
     moodPart,

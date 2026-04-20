@@ -39,6 +39,28 @@ EMPTY-FIELD HANDLING (CRITICAL — applies whenever the user has not specified a
 
 The user-prompt will end with a "NOT SPECIFIED" line listing which fields to leave alone. Honour it strictly.
 
+BASE DESCRIPTION HANDLING (CRITICAL — applies when the user-prompt starts with "0. BASE DESCRIPTION")
+The BASE DESCRIPTION is an existing prose prompt from the user. Your job is EDITORIAL — rewrite it for polish and density, NOT expand it with new content.
+- Every instrument, mood, genre, tempo, vocal detail and production descriptor mentioned in the BASE DESCRIPTION must appear in your output (in reworded form).
+- You MUST NOT add instruments, genres, BPM numbers, keys, vocal genders or eras that are not in the BASE DESCRIPTION. The anti-hallucination rule from FORBIDDEN still applies — the BASE DESCRIPTION is the ground truth, not a springboard.
+- If the BASE DESCRIPTION says "piano", output "piano" — NEVER "Rhodes piano" or "Fender Rhodes" unless the BASE DESCRIPTION used those exact words.
+- If the BASE DESCRIPTION says "string pads" or "warm synth pads", output those — NEVER "Juno synth pads", "Moog", or any named synth model unless the BASE DESCRIPTION used that exact model name.
+- If the BASE DESCRIPTION says "mid-tempo", output "mid-tempo" — NEVER a specific number like "85 BPM" or "100 BPM".
+- If the BASE DESCRIPTION says "clean, expressive vocals", output that — NEVER add "breathy", "intimate", "female", "male" or other qualifiers that are not in the BASE DESCRIPTION.
+- The structured fields (sections 1-11 below the BASE DESCRIPTION) are ADDITIONAL constraints. Integrate them only where they don't contradict the BASE DESCRIPTION. Structured negations (section 11) replace the ending.
+- Keep the BASE DESCRIPTION's key references intact (e.g. "classic animated film soundtrack" stays as a reference, not omitted).
+
+BASE DESCRIPTION — BEFORE/AFTER EXAMPLE
+INPUT BASE DESCRIPTION:
+"A delicate, cinematic pop ballad with a profoundly reflective and melancholic mood. The arrangement is minimalist and sparse. Mid-tempo, driven by gentle piano chords and subtle, warm string pads, supporting clean, expressive vocals."
+
+CORRECT OUTPUT (editorial rewrite, same content, denser prose):
+"A delicate cinematic pop ballad, profoundly reflective and melancholic in mood, built on a minimalist and sparse mid-tempo arrangement. Gentle piano chords and subtle warm string pads hold the space for clean, expressive vocals."
+
+WRONG OUTPUT (DO NOT DO THIS — invents BPM, invents Rhodes, invents Juno, invents 'breathy'):
+"A cinematic pop ballad, reflective and melancholic, anchored at 85 BPM. Warm Rhodes piano and subtle Juno synth pads underpin a sparse arrangement, with intimate breathy vocals floating on top."
+Why wrong: BASE said "piano" not "Rhodes", "string pads" not "Juno", "mid-tempo" not "85 BPM", "clean expressive" not "breathy intimate". Every one of those is hallucination.
+
 CONTENT RULES
 - Subgenre specific ("indie shoegaze" not "rock") IF a subgenre is given.
 - Instruments specific ("Moog bass synth" not "synth") IF instruments are given.
@@ -46,10 +68,31 @@ CONTENT RULES
 - Mood concrete ("melancholic and bittersweet", not "sad").
 - Use production descriptors actively — they are underused but high impact.
 
+GENRE FIDELITY (CRITICAL — when Main Genre or Subgenre is given in structured fields)
+The genre the user selected is a HARD constraint, not a starting point. Honour it exactly:
+- Use the EXACT Main Genre / Subgenre name from the input, lowercased if needed ("Synthwave" stays "synthwave", "Drum and Bass" stays "drum and bass", "Deep House" stays "deep house"). NEVER substitute with a synonym or adjacent genre.
+  * "synthwave" must NOT become "retro electronic", "80s pop", "retrowave" (unless the user selected retrowave), "vaporwave" or "new wave".
+  * "trap" must NOT become "hip-hop", "rap", or "lo-fi hip-hop".
+  * "deep house" must NOT become "house", "tech house", or "electronic dance".
+  * "dream pop" must NOT become "indie pop", "shoegaze", or "alt pop".
+  * "drum and bass" must NOT become "jungle", "electronic breakbeat", or "UKG".
+- If BOTH Main Genre and Subgenre are given, LEAD with the Subgenre (it is more specific). The Main Genre may appear once as family context ("synthwave, an electronic subgenre") but is not mandatory.
+- If ONLY the Main Genre is given, use it as-is. Do NOT invent a subgenre to make it sound more specific.
+- Do NOT add unrelated genres not in the input. If the user gave "synthwave" only, do NOT also mention "vaporwave" or "chillwave" as if they were fusion — those would require an explicit Fusion / Secondary Genre field.
+- The genre word(s) must appear LITERALLY in the first sentence, usually in the first 60 characters. Example start: "A dark synthwave track..." or "A deep house groove..." — NOT "A retro-tinged electronic piece reminiscent of synthwave".
+
+GENRE FIDELITY — BEFORE/AFTER EXAMPLE
+Input: "1. Main Genre: Electronic  1a. Subgenre: Dream Pop (UK, typical BPM 90-120)  3. Mood: melancholic, nostalgic"
+CORRECT OUTPUT: "A melancholic, nostalgic dream pop track with hazy textures and a mid-tempo pulse..."
+WRONG OUTPUT: "A nostalgic indie pop song..." (swapped "dream pop" for "indie pop" — genre infidelity)
+WRONG OUTPUT: "A melancholic electronic piece with shoegaze influences..." (dropped dream pop, added shoegaze)
+
 FORBIDDEN — any of these makes the output INVALID and will be REJECTED
 - Artist names or band names. Describe the sound signature instead.
 - Command verbs: "create", "make", "generate", "write", "compose", "please".
 - Vague genres without qualifier.
+- Genre substitution: using a synonym or adjacent genre instead of the exact Main Genre / Subgenre name from the input (e.g. "retro electronic" instead of "synthwave", "hip-hop" instead of "trap", "indie pop" instead of "dream pop").
+- Adding unrelated adjacent genres not listed in the input (e.g. mentioning "vaporwave" when only "synthwave" was given).
 - Contradictory moods like "calm aggressive".
 - Lyrical theme content in the style prompt.
 - Section tags ([Verse], [Chorus]) — those belong in the lyrics box.
@@ -69,12 +112,14 @@ GOOD EXAMPLE (sparse state — only moods + production tags given, no genre/inst
 A feel-good, anthemic track with a polished radio-ready mix and a wide stereo field. Tight production gives the mid-tempo groove a modern, loud feel. No growled vocals. No harsh distortion.
 
 SELF-VERIFICATION (silent, before returning your answer)
-Before producing the final output, silently check all four:
+Before producing the final output, silently check all six:
 1. Does the output contain any FORBIDDEN word or phrase? If yes, rewrite.
 2. Does the output exceed 900 characters? If yes, shorten by cutting the least-specific descriptors.
 3. Does the output contain any detail NOT present in the input (invented BPM, invented instrument, invented era)? If yes, remove it.
-4. Does the output start with a command verb? If yes, rephrase to start with a descriptor.
-Only return the output after passing all four checks.
+4. If there was a BASE DESCRIPTION: does the output contain any instrument, genre, BPM, key or era NOT in the BASE DESCRIPTION or structured fields? If yes, remove it. Conversely, are the core references from the BASE DESCRIPTION preserved?
+5. GENRE FIDELITY: If Main Genre or Subgenre was provided, does the output use that EXACT genre word(s)? Have you swapped "synthwave" for "retrowave", "trap" for "hip-hop", "dream pop" for "indie pop"? If yes, revert to the exact input genre. Did you add unrelated adjacent genres not in the input? If yes, remove them.
+6. Does the output start with a command verb? If yes, rephrase to start with a descriptor.
+Only return the output after passing all six checks.
 
 OUTPUT CONTRACT
 Return only the prose prompt. No introduction. No explanation. No meta comments. No markdown. No preamble. Start directly with the music description.`;
@@ -115,12 +160,23 @@ EMPTY-FIELD HANDLING
 - No instruments → production-texture tags only. Never invent specific gear.
 - No key → omit entirely.
 
+BASE DESCRIPTION HANDLING (CRITICAL — applies when the user-prompt starts with "0. BASE DESCRIPTION")
+The BASE DESCRIPTION is an existing prompt from the user. Convert it into tags — do NOT expand it.
+- Every instrument, genre, mood, tempo, vocal detail from the BASE DESCRIPTION becomes a tag.
+- Do NOT add instruments, genres, BPM numbers, keys, vocal genders or eras not in the BASE DESCRIPTION.
+- Structured fields (sections 1-11) are additional tags, integrated only where they don't contradict the BASE DESCRIPTION.
+
 CONTENT RULES
 - Subgenre-specific ("indie shoegaze" not "rock"). Specific instruments ("Moog bass" not "synth").
 - Every tag 1-4 words. No long phrases.
 - Comma-space separator. No bullets, no semicolons, no newlines.
 - Max two genres. Dominant genre first.
 - Max 18 tags total.
+
+GENRE FIDELITY (CRITICAL — when Main Genre or Subgenre is given)
+- Use the EXACT Main Genre / Subgenre name as a tag. "synthwave" stays "synthwave", never "retro electronic" or "retrowave". "trap" stays "trap", never "hip-hop". "dream pop" stays "dream pop", never "indie pop".
+- The genre tag is the FIRST tag. Always.
+- Do NOT add unrelated adjacent genre tags ("vaporwave", "chillwave") unless the user provided them as Fusion / Secondary Genre.
 
 FORBIDDEN — any of these makes the output INVALID
 - Prose sentences — only tags.
@@ -164,7 +220,10 @@ TASK
 Convert the idea into 8-15 comma-separated tags. HARD LIMIT: under 900 characters. Front-load genre + mood.
 
 EMPTY-FIELD HANDLING
-If the idea is short or vague, do NOT invent details. "trauriger Song" yields mood + tempo + production only — no fabricated genre/BPM/instruments.
+If the idea is short or vague, do NOT invent details. "trauriger Song" yields mood + tempo + production only — no fabricated genre/BPM/instruments/vocal-language.
+- The LANGUAGE the user wrote the idea IN (German, Spanish...) is NOT a vocal-language tag. Only phrases like "deutsche vocals", "english lyrics" count.
+- Never invent instrument tags (piano, Rhodes, Juno, Moog, guitar) unless mentioned.
+- Franchise/culture references ("Disney", "Studio Ghibli", "Bollywood", "Broadway") stay LITERALLY as tags. Never silently swap "Disney" for "Broadway-style pop".
 
 RULES
 - Subgenre-specific if mentioned. Max 2 genres.
@@ -177,6 +236,9 @@ dark synthwave, brooding, late-night, rain-soaked, raspy male vocals, English, 8
 
 GOOD EXAMPLE (sparse idea: "trauriger Song")
 melancholic, slow-paced, reflective, intimate production, warm analog texture
+
+GOOD EXAMPLE (sparse idea with franchise: "ein emotionaler Disney song der minimal ist und herzerreisend")
+Disney-style, emotional ballad, heartbreaking, minimalist, sparse arrangement, mid-tempo, restrained, intimate production
 
 OUTPUT CONTRACT
 Return only the comma-separated tag list. No introduction, no explanation, no markdown.`;
@@ -202,13 +264,33 @@ ELEMENT ORDER (STRICT — only include elements derivable from the idea)
 10. Sound reference (nuance, no artist names) IF mentioned.
 11. Negations last IF mentioned (max 2, "No X. No Y.").
 
-EMPTY-FIELD HANDLING (CRITICAL)
-If the idea is short or vague, do NOT invent details. A two-word idea like "trauriger Song" should produce a short prose prompt focused on mood + tempo-feel + production texture — NOT a fabricated genre, BPM, instrument list and key.
-- No genre clue → keep it loose ("a melancholic track")
-- No tempo clue → tempo-range word, never a number
-- No instrument clue → production texture only
-- No vocal clue → say "vocals" generically or omit
-- No language clue → do NOT mention a language
+EXPANSION POLICY (CRITICAL — this is the heart of the task)
+Your job is to EXPAND a short idea into a rich, Suno-ready style prompt. Do this by leveraging knowledge of what is TYPICAL for the genre/franchise/mood the user named — without ever inventing specific facts.
+
+ALLOWED — genre-typical generic expansion (expected, makes the prompt useful)
+- Generic instrument families that fit the genre: "piano", "strings", "pads", "drums", "acoustic guitar", "synth pads". A Disney ballad may gain "soft piano and subtle strings"; a synthwave track may gain "synth pads and programmed drums".
+- Vocal character hints that fit the genre when the idea gives mood: "fragile female vocal" for an emotional Disney ballad, "raspy male vocal" for gritty blues-rock. Only add vocal gender/delivery if the mood + genre strongly imply it.
+- Tempo-range words: "slow tempo", "mid-tempo", "uptempo". NEVER a specific BPM number.
+- Production descriptors: "warm reverb", "intimate close-miked", "cinematic", "polished", "stripped down".
+- Typical song-structure hints for the genre: "gentle crescendo near the end", "whispered verses", "emotional climax".
+- Atmospheric / mood descriptors: "lots of silence and space", "deeply touching and vulnerable".
+
+FORBIDDEN — these are the four lies you must never tell
+1. Specific brand/model names: no "Rhodes", "Fender Rhodes", "Juno", "Juno-60", "Moog", "Minimoog", "Telecaster", "Stratocaster", "Les Paul", "Linn drums", "TR-808", "808", "Jupiter-8", "Prophet" unless the idea explicitly used that exact word.
+2. Specific BPM numbers: never "85 BPM", "100 BPM" — only tempo-range words.
+3. Vocal language: do NOT mention a language. CRITICAL: the LANGUAGE the user wrote the idea IN (German, Spanish, etc.) is NOT a vocal-language clue. Only treat phrases like "deutsche vocals", "english lyrics", "sung in Spanish" as vocal-language clues.
+4. Genre substitution: see GENRE FIDELITY below.
+
+NO-CLUE FALLBACKS (when the idea is truly empty on a dimension)
+- No genre clue at all → keep it loose ("a melancholic track", "an uplifting instrumental piece"). Don't invent a subgenre.
+- Mood given but no genre → still allowed to suggest genre-typical instruments if the mood strongly implies a family ("heartbreaking ballad" → piano+strings is safe).
+- Truly no tempo clue and no genre/mood clue → omit tempo entirely rather than guess.
+
+FRANCHISE / CULTURE REFERENCES (CRITICAL)
+If the idea names a franchise or style-reference like "Disney", "Studio Ghibli", "Pixar", "Bollywood", "Broadway", "spaghetti western", "J-pop", "anime opening", keep that reference LITERALLY in the output (e.g. "Disney-style animated film ballad", "Studio Ghibli-inspired score"). Do NOT silently translate "Disney" into "Broadway-style pop ballad" or similar genre swaps — that loses the user's actual intent.
+
+GENRE FIDELITY (CRITICAL)
+If the idea names a genre or subgenre ("synthwave", "trap", "deep house", "dream pop", "drum and bass", "bossa nova", "shoegaze", ...), use that EXACT word in the output. NEVER substitute a synonym or adjacent style ("synthwave" → "retro electronic" is wrong, "trap" → "hip-hop" is wrong, "dream pop" → "indie pop" is wrong). The genre word(s) should appear in the first sentence, ideally the first 60 characters.
 
 FORBIDDEN — any of these makes the output INVALID and will be REJECTED
 - Artist names or band names.
@@ -217,18 +299,30 @@ FORBIDDEN — any of these makes the output INVALID and will be REJECTED
 - Lyrical theme content. Section tags ([Verse], [Chorus]).
 - Reviewer-filler words: vibrant, exuding, anchored, soaring, pulsating, transcendent, hauntingly, mesmerizing, captivating, ethereal-sounding.
 - Reviewer-filler phrases: "sonic landscape", "musical journey", "tour de force", "tapestry of sound", "sonic palette".
-- Any invented detail not derivable from the idea.
+- Any invented detail not derivable from the idea. Specifically: no invented instruments (piano, strings, Rhodes, Juno, Moog, guitar, 808) unless mentioned; no invented BPM number; no invented vocal language or gender.
 - Output over 900 characters.
 
 BAD EXAMPLE (do NOT produce output like this)
 "Create a vibrant, soaring synthwave track with ethereal vocals that takes the listener on a hauntingly mesmerizing musical journey through a tapestry of sound."
 Why it is invalid: command verb "Create", reviewer-filler words (vibrant, soaring, ethereal, hauntingly, mesmerizing), reviewer-filler phrases ("musical journey", "tapestry of sound"), no concrete specifics.
 
-GOOD EXAMPLE (detailed idea)
-A brooding dark synthwave ballad with a late-night, rain-soaked mood. A raspy male vocal in English sits upfront at 88 BPM. Deep Juno pad, muted Telecaster arpeggios and tight 808 kicks drive the track in a minor key, backed by warm analog production and a dry close-miked mix. No orchestral strings.
+BAD EXAMPLE (do NOT produce output like this) — idea was "ein emotionaler Disney song der minimal ist und herzerreisend"
+"A heartbreaking, emotional Broadway-style pop ballad. The track maintains a minimal, intimate feel, built around German vocals. Mid-tempo pacing supports a restrained, focused performance. The production is clean and spare, emphasizing a single Rhodes piano and Juno synth pad."
+Why it is invalid:
+- "Disney" was silently replaced with "Broadway-style pop ballad" — franchise reference LOST.
+- "German vocals" invented — the idea was written in German but never requested German as vocal language.
+- "Rhodes piano" + "Juno synth pad" — specific brand/model names that were never mentioned.
+(Generic expansion like "soft piano and subtle strings" would have been fine — the problem is the specific brand names and the franchise swap.)
+
+GOOD EXAMPLE (detailed idea — note: Juno/Telecaster/808 appear only because the user mentioned them explicitly)
+A brooding dark synthwave ballad with a late-night, rain-soaked mood. A raspy male vocal in English sits at 88 BPM. Deep Juno pad, muted Telecaster arpeggios and tight 808 kicks drive the track in a minor key, backed by warm analog production and a dry close-miked mix. No orchestral strings.
 
 GOOD EXAMPLE (sparse idea: "trauriger Song")
-A melancholic, slow-paced track with a reflective, restrained mood. Production sits intimate and close, with warm analog texture.
+A melancholic, slow-paced track with a reflective mood. Intimate close-miked production with warm analog texture.
+
+GOOD EXAMPLE (sparse idea with franchise reference: "ein emotionaler Disney song der minimal ist und herzerreisend")
+An emotional, minimalistic Disney-style ballad with soft piano and subtle strings. A fragile, intimate female vocal sits on top, delivered at a slow tempo with a melancholic, heartbreaking mood. Cinematic but simple arrangement with lots of silence and space, gentle crescendo near the end, warm reverb, deeply touching and vulnerable — similar feeling to classic Disney tearjerker songs but stripped down and modern.
+Why it is valid: keeps "Disney" literally, expands with GENERIC instruments typical for a Disney ballad (soft piano, subtle strings — not "Rhodes" or "Juno"), uses tempo-range word "slow tempo" (no BPM number), no vocal language invented, franchise reference preserved at end. This is the target quality — expand richly with genre-typical generic elements.
 
 SELF-VERIFICATION (silent, before returning)
 Before producing the final output, silently check:
@@ -251,6 +345,17 @@ export const buildUserPromptFromState = (state: PromptState): string => {
   const secondaryMain = MAIN_GENRES.find((g) => g.id === state.secondaryGenre);
   const secondaryName = secondarySub?.name ?? secondaryMain?.name;
   const secondary = secondarySub || secondaryMain ? { name: secondaryName } : undefined;
+
+  // Base-Seed aus "Aus Idee"-Flow: steht ganz oben und ist die Grundlage fuer
+  // die Ausformulierung. Der Builder soll den Seed EDITORIAL ueberarbeiten
+  // (gleiche Inhalte, bessere Formulierung) und NICHTS erfinden, was nicht
+  // im Seed oder in den strukturierten Feldern vorkommt.
+  const seed = state.customStylePrompt?.trim();
+  if (seed) {
+    parts.push(
+      `0. BASE DESCRIPTION (this is the ground truth — rewrite/polish it into a dense Suno style prompt, keep every instrument/mood/tempo/genre reference intact, do NOT add instruments or BPM numbers not present here):\n${seed}`,
+    );
+  }
 
   // Reihenfolge im User-Prompt spiegelt die Element-Order (1->11).
   if (main) parts.push(`1. Main Genre: ${main.name}`);
@@ -302,13 +407,19 @@ export const buildUserPromptFromState = (state: PromptState): string => {
     notSpecified.push("sound reference");
   }
 
-  if (notSpecified.length > 0) {
+  // Bei vorhandenem Seed soll der Builder die Luecken aus der Base-Description
+  // fuellen duerfen (sonst wuerde der NOT-SPECIFIED-Block ihn zwingen, z.B.
+  // Genre rauszulassen, obwohl der Seed es klar beschreibt).
+  if (notSpecified.length > 0 && !seed) {
     parts.push(
       `\nNOT SPECIFIED — do NOT invent values for these, leave them out of the prose: ${notSpecified.join(", ")}`,
     );
   }
 
-  return parts.length
-    ? `Baue einen Suno-Style-Prompt aus dieser Auswahl:\n\n${parts.join("\n")}`
-    : "Keine spezifische Auswahl — generiere einen sinnvollen Beispiel-Prompt für modernen Pop.";
+  if (parts.length) {
+    return seed
+      ? `Rewrite the BASE DESCRIPTION below into a polished Suno-V5.5 style prompt. The BASE DESCRIPTION is the ground truth — every instrument, mood, tempo and genre reference in it must appear in the output. Do NOT add instruments, BPM numbers, keys or eras that are not in the BASE DESCRIPTION or structured fields. Integrate the structured fields as additional constraints only:\n\n${parts.join("\n")}`
+      : `Baue einen Suno-Style-Prompt aus dieser Auswahl:\n\n${parts.join("\n")}`;
+  }
+  return "Keine spezifische Auswahl — generiere einen sinnvollen Beispiel-Prompt für modernen Pop.";
 };
